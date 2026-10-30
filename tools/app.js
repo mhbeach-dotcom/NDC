@@ -189,7 +189,27 @@
   });
   window.addEventListener('resize', debounce(function() { if (window.innerWidth >= 1100) closeDrawer(); }, 200));
 
+  // ---------------- next class ----------------
+  var SESSIONS = /*SESSIONS*/[];
+  function renderNextClass() {
+    var el = document.getElementById('nextClass'), now = new Date(), s = null, i;
+    for (i = 0; i < SESSIONS.length; i++) if (new Date(SESSIONS[i].end) >= now) { s = SESSIONS[i]; break; }
+    if (!s) { el.hidden = true; return; }
+    var start = new Date(s.start), end = new Date(s.end), txt;
+    var day = start.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' });
+    if (now >= start) txt = 'In progress';
+    else {
+      var mins = Math.round((start - now) / 60000), d = Math.floor(mins / 1440), h = Math.floor((mins % 1440) / 60);
+      txt = 'in ' + (d ? d + 'd ' : '') + h + 'h' + (d ? '' : ' ' + (mins % 60) + 'm');
+    }
+    el.hidden = false;
+    el.dataset.jumpSession = s.n;
+    el.innerHTML = '<strong>Next class:</strong> Lesson ' + s.n + ' &middot; ' + day + ', ' + pad(start.getHours()) + pad(start.getMinutes()) + '&ndash;' + pad(end.getHours()) + pad(end.getMinutes()) + ' &middot; ' + txt;
+  }
+
   // ---------------- init ----------------
+  renderNextClass();
+  setInterval(renderNextClass, 30000);
   buildSearchIndex();
   initReadingCheckboxes();
 })();

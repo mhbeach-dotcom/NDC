@@ -4,8 +4,16 @@
   "quote": "“Deterrence is the art of producing in the mind of the enemy the fear to attack.”",
   "quote_by": "Dr. Strangelove",
   "instructors": [
-    {"name": "Dr. Tyler Bowen", "role": "Assistant Professor, United States Naval War College", "office": "MLH 321, 401-856-5772"},
-    {"name": "Dr. Jonathan Hunt", "role": "United States Naval War College", "office": "MLH 320, 401-856-6059"}
+    {
+      "name": "Dr. Tyler Bowen",
+      "role": "Assistant Professor, United States Naval War College",
+      "office": "MLH 321, 401-856-5772"
+    },
+    {
+      "name": "Dr. Jonathan Hunt",
+      "role": "United States Naval War College",
+      "office": "MLH 320, 401-856-6059"
+    }
   ],
   "summary": [
     "Since the Manhattan Project, U.S. political and military leaders have wrestled with how nuclear weapons can be used to influence an adversary’s decision-making. How can nuclear weapons be used to deter adversaries from taking certain actions? Can they be used to compel adversaries to take certain desired actions? Each U.S. presidential administration has had to answer these questions and articulate how nuclear weapons fit into the United States’ national security strategy.",
@@ -20,7 +28,10 @@
   ],
   "assignments": [
     {
-      "n": 1, "title": "Scenario Exercise", "words": 2500, "window": "Due weeks 5–7 (turn in any time in the window)",
+      "n": 1,
+      "title": "Scenario Exercise",
+      "words": 2500,
+      "window": "Due weeks 5–7 (Dec 21 – Jan 8); turn in any time in the window",
       "paras": [
         "Choose one of three scenarios: China launching an amphibious invasion of Taiwan, Russia attacking a NATO state in Eastern Europe, or North Korea starting a crisis on the Korean Peninsula. You are free to set the scope of the crisis and fill in its details, within reason. In your scenario, you are tasked with identifying the role that nuclear weapons would play in the crisis and how you would advise the president to make sure that U.S. nuclear weapons fulfill that role."
       ],
@@ -38,14 +49,19 @@
       ]
     },
     {
-      "n": 2, "title": "Nuclear Posture Review", "words": 2500, "window": "Due weeks 8–10 (turn in any time in the window)",
+      "n": 2,
+      "title": "Nuclear Posture Review",
+      "words": 2500,
+      "window": "Due weeks 8–10 (Jan 11 – Jan 29); turn in any time in the window",
       "paras": [
         "Make recommendations to the United States’ Nuclear Posture Review Commission. You must identify the security threats that the United States faces. How would the United States’ nuclear weapons address those threats? What objectives would they fulfill?",
         "Then make an argument for the level and types of nuclear forces needed to achieve those objectives. How many nuclear weapons does the United States need? On which type of launchers?",
         "Assess whether the United States should adjust its targeting doctrine, nuclear proliferation policy, nuclear stockpile stewardship, nuclear posture, declaratory policy, and force acquisition and/or retirement.",
         "Finally, assess whether and how you would pursue arms control with Russia or China and whether you think this nuclear posture would help achieve an arms control agreement."
       ],
-      "asks": [], "then": "", "must": []
+      "asks": [],
+      "then": "",
+      "must": []
     }
   ],
   "expectations": "This course is Pass/Fail. That being said, we hope and expect that you engage deeply with the material and questions presented in this course. We believe that issues of nuclear deterrence and coercion are quite complex and have a renewed urgency in the current security environment. By electing to take this course, we think that you agree. As instructors, we will strive to bring rigor and professionalism to each course session, and we expect you to do the same. If everyone is invested in the material and the debate, then this should be a fun and enriching course for everyone involved.",
@@ -60,5 +76,53 @@
     "GAI systems still hallucinate. You are responsible for independently fact checking, sourcing, and appropriately citing any claims made in generated text that are not common or general knowledge."
   ],
   "gai_outro": "Overall, in all uses of GAI, students must comply with NWC policy on academic integrity. The responsible and ethical use of GAI requires that students disclose and cite the nature and extent of their use of GAI for graded assignments. In other words, when in doubt, err on the side of documenting how you used a GAI system to aid you in an assignment.",
-  "links": {}
+  "links": {},
+  "schedule": {
+    "start": "13:30",
+    "end": "16:30",
+    "weeks_start": "2026-11-23",
+    "source": "S&P 2026-2027 Calendar (updated 10/8/2026): Electives/LDPA Days 1–10",
+    "days": [
+      {
+        "date": "2026-11-23",
+        "note": "Electives/LDPA Day 1"
+      },
+      {
+        "date": "2026-11-30",
+        "note": "Electives/LDPA Day 2"
+      },
+      {
+        "date": "2026-12-07",
+        "note": "Electives/LDPA Day 3"
+      },
+      {
+        "date": "2026-12-14",
+        "note": "Electives/LDPA Day 4"
+      },
+      {
+        "date": "2026-12-21",
+        "note": "Electives/LDPA Day 5 — holiday recess begins the next day"
+      },
+      {
+        "date": "2027-01-04",
+        "note": "Electives/LDPA Day 6"
+      },
+      {
+        "date": "2027-01-11",
+        "note": "Electives/LDPA Day 7"
+      },
+      {
+        "date": "2027-01-20",
+        "note": "Electives/LDPA Day 8 — Wednesday (alternate date; Mon Jan 18 is MLK Day)"
+      },
+      {
+        "date": "2027-01-25",
+        "note": "Electives/LDPA Day 9"
+      },
+      {
+        "date": "2027-02-01",
+        "note": "Electives/LDPA Day 10"
+      }
+    ]
+  }
 }

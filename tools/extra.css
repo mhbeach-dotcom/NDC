@@ -88,3 +88,7 @@
 .ref-body ol, .ref-body ul { margin: 6px 0 6px 20px; padding: 0; }
 .ref-body li { margin: 4px 0; }
 .prog-line { font-size: 0.8rem; color: var(--muted); margin: 6px 0 0; }
+.next-class { display: block; margin-top: 14px; width: 100%; text-align: left; font: inherit; font-size: 0.88rem; color: #fff; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.25); border-radius: 8px; padding: 8px 12px; cursor: pointer; }
+.next-class:hover { background: rgba(255,255,255,0.18); }
+.next-class strong { color: var(--gold-light); }
+.next-class[hidden] { display: none; }
