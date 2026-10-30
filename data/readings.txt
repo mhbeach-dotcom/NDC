@@ -1,0 +1,133 @@
+# Lesson reading lists, transcribed from "Nuclear Deterrence Theory Course_26-27.docx".
+# Format:  "## Short title | Full lesson title"   starts a lesson
+#          "Q: text"  framing question(s)        "R: citation"  required     "F: citation"  further
+#          "N: text"  note attached to the previous reading (instructor draft notes kept from the syllabus)
+# A trailing "(NN pages)" on a citation becomes its page badge.
+
+## Great Debate | The great debate: How do nuclear weapons affect international politics?
+Q: Are nuclear weapons a net positive or a net negative for the world? Should we “worry”? Or should we “love the bomb”?
+R: John Lewis Gaddis, “The Long Peace: Elements of Stability in the Postwar International System,” International Security 10, no. 4 (Spring 1986): 120-140. (20 pages)
+R: Scott Douglas Sagan and Kenneth N. Waltz, The Spread of Nuclear Weapons: An Enduring Debate, 3rd ed. (New York: W.W. Norton & Co, 2013), chapters 1 and 2, pp. 3-82. (80 pages)
+F: John Mueller, “The Essential Irrelevance of Nuclear Weapons: Stability in the Postwar World,” International Security 13, no. 2 (Fall 1988): 55–79. (24 pages)
+N: Syllabus draft note: “replace with Gaddis 1986.”
+F: Robert Jervis, The Meaning of the Nuclear Revolution: Statecraft and the Prospect of Armageddon (Ithaca, NY: Cornell University Press, 1989).
+F: Ward Wilson, “The Winning Weapon?: Rethinking Nuclear Weapons in Light of Hiroshima,” International Security 31, no. 4 (Spring 2007): 162–79.
+F: Glenn Herald Snyder, “The balance of power and the balance of terror,” Theory and research on the causes of war (Englewood Cliffs, NJ: Prentice-Hall, 1969), 114-126.
+F: Robert Rauchhaus, “Evaluating the Nuclear Peace Hypothesis: A Quantitative Approach,” Journal of Conflict Resolution 53, no. 2 (April 2009): 258–77.
+F: T. V. Paul, “Taboo or Tradition? The Non-Use of Nuclear Weapons in World Politics,” Review of International Studies 36, no. 04 (October 2010): 853–63.
+F: Nina Tannenwald, “Stigmatizing the Bomb: Origins of the Nuclear Taboo,” International Security 29, no. 4 (Spring 2005): 5–49.
+F: Charles L. Glaser, Analyzing Strategic Nuclear Policy (Princeton, N.J: Princeton University Press, 1990).
+F: Scott Douglas Sagan and Kenneth N. Waltz, The Spread of Nuclear Weapons: An Enduring Debate, 3rd ed. (New York: W.W. Norton & Co, 2013), chapters 3 and 4.
+F: Kenneth N. Waltz, “Nuclear Myths and Political Realities,” American Political Science Review 84, no. 3 (September 1990): 730–45.
+
+## Terminology | Terminology: The language of nuclear deterrence
+R: Charles Glaser and Brian Radzinsky, “Basics of Deterrence and U.S. Nuclear Doctrine and Forces.” In Charles Glaser, Austin Long, and Brian Radzinsky, Managing U.S. Nuclear Operations in the 21st Century (Brookings Institution Press, 2022), pp. 15-40. (25 pages)
+R: Bernard Brodie, The Absolute Weapon (1946), pp. 14-25, 57-63. (17 pages)
+N: Syllabus draft note: “but don’t need to read all 46 pages, check to see which ones we can cut.”
+R: Robert Jervis, The Meaning of the Nuclear Revolution: Statecraft and the Prospect of Armageddon (Ithaca, NY: Cornell University Press, 1989), pp. 1-23, 38-45. (29 pages)
+R: Colin Gray and Keith Payne, “Under the Nuclear Gun: Victory is Possible,” Foreign Policy, No. 39 (Summer 1980), pp. 14-27. (14 pages)
+F: Colin Gray, “Nuclear Strategy: The Case for a Theory of Victory,” International Security 4, no. 1 (1979), pp. 54-87. (33 pages)
+F: Michael Mazarr, Understanding Deterrence, RAND Corporation, Expert Insights, https://www.rand.org/pubs/perspectives/PE295.html
+F: Tami Davis Biddle, Coercion Theory: A Basic Introduction for Practitioners, Texas National Security Review 3, no. 2 (Spring 2020): 94-109.
+F: Robert Jervis, “Cooperation Under the Security Dilemma,” World Politics 30, no. 2 (January 1978), pp. 187-214.
+F: Bruce Kuklick, Blind Oracles: Intellectuals and War from Kennan to Kissinger (Princeton, N.J.: Princeton University Press, 2007): “Chapter 2: Theorists of War, 1945-1953”; “Chapter 3: RAND in Opposition, 1946-1961”; “Chapter 5: RAND and the Kennedy administration, 1961-1962.”
+F: Bernard Brodie, “The Development of Nuclear Strategy,” International Security 2, no. 4 (Spring 1978): 65–83.
+F: Eric S. Edelman, “Nuclear Strategy and Practice: The Great Divergence,” in Hal Brands, ed., The New Makers of Modern Strategy: From the Ancient World to the Digital Age (Princeton: Princeton University Press, 2023), 665-691. (26 pages)
+
+## Risk & Uncertainty | Risk and uncertainty: How fragile is the nuclear balance?
+R: Albert Wohlstetter, “The Delicate Balance of Terror,” Foreign Affairs, Jan. 1959, pp. 211-234. (23 pages)
+R: “The Manipulation of Risk,” in Thomas Schelling, Arms and Influence (New Haven: Yale University, 1966), 92-125. (33 pages)
+R: Austin Long and Brendan Green, “Stalking the Secure Second Strike: Intelligence, Counterforce, and Nuclear Strategy,” Journal of Strategic Studies 38, nos. 1-2 (2015), pp. 38-73. (35 pages)
+R: Bruce Blair, The Logic of Accidental Nuclear War (Washington, D.C.: Brookings Institution Press, 1993), pp. 1-10. (10 pages)
+F: Keir A. Lieber and Daryl G. Press, “The New Era of Counterforce: Technological Change and the Future of Nuclear Deterrence,” International Security 41, no. 4 (April 1, 2017): 9–49.
+F: Keir A. Lieber and Daryl Grayson Press, The Myth of the Nuclear Revolution: Power Politics in the Atomic Age, Cornell Studies in Security Affairs (Ithaca, NY: Cornell University Press, 2020).
+N: The syllabus appends “Freedman and Michaels, The Strategy of Stable Conflict” to this entry, which looks like a stray fragment.
+F: James Acton, “Reclaiming Strategic Stability,” in Elbridge Colby and Michael Gerson, eds., Strategic Stability: Contending Interpretations (U.S. Army War College Press), pp. 117-128.
+F: John D. Steinbruner and Thomas M. Garwin, “Strategic Vulnerability: The Balance between Prudence and Paranoia,” International Security 1, no. 1 (1976): 138.
+F: Matthew Bunn and Kosta Tsipis, “The Uncertainties of a Preemptive Nuclear Attack,” Scientific American 249, no. 5 (November 1983): 38–47.
+F: “ICBM Vulnerability,” in Lawrence Freedman and Jeffrey H. Michaels, The Evolution of Nuclear Strategy: New, Updated and Completely Revised, 4th ed. (London: Palgrave Macmillan, 2019), 483-494.
+F: Adam Mount, “The Indelicate Balance of Nuclear Modernization,” Bulletin of the Atomic Scientists, January 28, 2016, https://thebulletin.org/2016/01/the-indelicate-balance-of-nuclear-modernization/
+
+## Brinkmanship & Berlin | Brinkmanship and the Berlin Crisis
+R: Marc Trachtenberg, History and Strategy (Princeton, N.J: Princeton University Press, 1991), 169-234. (67 pages)
+R: Sergey Radchenko, To Run the World: The Kremlin’s Cold War Bid for Global Power (New York, NY: Cambridge University Press, 2024), 281-293. (12 pages)
+R: Todd S. Sechser and Matthew Fuhrmann, Nuclear Weapons and Coercive Diplomacy (Cambridge: Cambridge University Press, 2017), 3-21, 132-142. (28 pages)
+F: “Nuclear Weapons, Statecraft, and the Berlin Crisis, 1958–1962,” Francis J. Gavin, Nuclear Statecraft: History and Strategy in America’s Atomic Age (Ithaca, N.Y: Cornell University Press, 2012), 57-74. (17 pages) E-book
+F: National Security Archive, Electronic Briefing Book #56, “First Strike Options and the Berlin Crisis, 1961,” http://nsarchive.gwu.edu/NSAEBB/NSAEBB56/
+F: Todd S. Sechser and Matthew Fuhrmann, “Crisis Bargaining and Nuclear Blackmail,” International Organization 67, no. 1 (January 2013): 173–95.
+F: Matthew Fuhrmann and Todd S. Sechser, “Signaling Alliance Commitments: Hand-Tying and Sunk Costs in Extended Nuclear Deterrence,” American Journal of Political Science 58, no. 4 (October 2014): 919–35.
+F: Reid B. C. Pauly, “Damned If They Do, Damned If They Don’t: The Assurance Dilemma in International Coercion,” International Security 49, no. 1 (July 1, 2024): 91–132.
+F: Vipin Narang, “Posturing for Peace? Pakistan’s Nuclear Postures and South Asian Stability,” International Security 34, no. 3 (Winter 2009): 38–78.
+F: Campbell Craig, Destroying the Village: Eisenhower and Thermonuclear War (New York: Columbia University Press, 1998).
+F: Robert S. Ross, “The 1995-96 Taiwan Strait Confrontation: Coercion, Credibility, and the Use of Force,” International Security 25, no. 2 (2000): 87–123.
+
+## Cuban Missile Crisis | The Cuban Missile Crisis and Crisis Management
+L: The syllabus tags this lesson “– Jon” (presumably Dr. Hunt).
+R: McGeorge Bundy and James G. Blight, “October 27, 1962: Transcripts of the Meetings of the ExComm,” International Security 12, no. 3 (Winter 1987/88): 30–92. (62 pages)
+R: Marc Trachtenberg, “The Influence of Nuclear Weapons in the Cuban Missile Crisis,” International Security 10, no. 1 (1985): 137-163. (26 pages)
+R: James Hershberg, “The Cuban Missile Crisis,” in Melvyn P. Leffler and Odd Arne Westad, eds., Crises and Détente, vol. 2, The Cambridge History of the Cold War (New York: Cambridge University Press, 2010), 65-87. (22 pages)
+F: Graham T. Allison, Essence of Decision: Explaining the Cuban Missile Crisis, 2nd ed. (New York: Longman, 1999).
+F: Marc Trachtenberg, History and Strategy, Princeton Studies in International History and Politics (Princeton, N.J: Princeton University Press, 1991).
+F: Robert F. Kennedy, Thirteen Days: A Memoir of the Cuban Missile Crisis (New York: W. W. Norton, 1969).
+F: James G. Blight and David A. Welch, On the Brink: Americans and Soviets Reexamine the Cuban Missile Crisis, 2nd ed. (New York: Noonday, 1990).
+F: Aleksandr Fursenko and Timothy J. Naftali, One Hell of a Gamble: Khrushchev, Castro, and Kennedy, 1958-1964, 1st ed. (New York: Norton, 1997).
+F: Michael Dobbs, One Minute to Midnight: Kennedy, Khrushchev, and Castro on the Brink of Nuclear War, 1st ed. (New York: Alfred A. Knopf, 2008).
+F: Sergo Mikoyan and Svetlana Savranskaya, The Soviet Cuban Missile Crisis: Castro, Mikoyan, Kennedy, Khrushchev, and the Missiles of November (Stanford, California: Stanford University Press, 2012).
+
+## Superiority & Damage Limitation | Nuclear superiority and damage-limitation
+R: Charles L. Glaser and Steve Fetter, “Should the United States Reject MAD? Damage Limitation and U.S. Nuclear Strategy toward China,” International Security 41, no. 1 (2016): 49–98. (49 pages)
+R: Austin Long, “Damage Limitation in the 21st Century,” in Counterforce in Contemporary U.S. Nuclear Strategy, Brad Roberts, ed. (Livermore, CA: Lawrence Livermore National Laboratory, 2025), pp. 66-86. (21 pages)
+F: Matthew Kroenig, “Nuclear Superiority and the Balance of Resolve,” International Organization 67, no. 1 (Winter 2013), pp. 141-171.
+F: David Logan, “Nuclear Superiority is What States Make of It,” International Security, pp. 172-215.
+F: Christopher Clary, “Survivability in the Age of Counterforce,” in The Fragile Balance of Terror: Deterrence in the New Nuclear Age, Vipin Narang and Scott Sagan, eds. (Ithaca, NY: Cornell University Press, 2022): pp. 154-181.
+
+## Arms Racing & Arms Control | Arms racing and arms control
+R: Thomas Schelling and Morton Halperin, Strategy and Arms Control (New York: Twentieth Century Fund, 1961), extracts.
+R: David Holloway, “Nuclear Weapons and the Escalation of the Cold War, 1945–1962,” in The Cambridge History of the Cold War, Volume I: Origins, Melvyn P. Leffler and Odd Arne Westad, eds. (Cambridge: Cambridge University Press, 2012), 376-397. (21 pages)
+R: James H. Lebovic, Flawed Logics: Strategic Nuclear Arms Control from Truman to Obama (Baltimore: The Johns Hopkins University Press, 2013), chapter 6. (17 pages)
+R: John D. Maurer, “Divided Counsels: Competing Approaches to SALT, 1969–1970,” Diplomatic History 43, no. 2 (April 1, 2019): 353–77. (24 pages)
+F: Thomas G. Mahnken, “Arms Competition, Arms Control, and Strategies of Peacetime Competition from Fisher to Reagan,” in Hal Brands, ed., The New Makers of Modern Strategy: From the Ancient World to the Digital Age (Princeton: Princeton University Press, 2023), 841-865. (24 pages)
+F: Brendan Rittenhouse Green, The Revolution That Failed: Nuclear Competition, Arms Control, and the Cold War, 1st ed. (Cambridge: Cambridge University Press, 2020).
+F: John Maurer, Competitive Arms Control: Nixon, Kissinger, and SALT, 1969-1972 (New Haven: Yale University Press, 2022).
+F: Jonathan Hunt, “Nuclear Arms Control in U.S. Foreign Policy,” in American History: Oxford Research Encyclopedias (New York: Oxford University Press, October 2016).
+F: Michael Krepon, Winning and Losing the Nuclear Peace: The Rise, Demise, and Revival of Arms Control (Stanford, California: Stanford Security Studies, an imprint of Stanford University Press, 2021).
+F: “Assured Destruction,” in Lawrence Freedman and Jeffrey H. Michaels, The Evolution of Nuclear Strategy, 4th ed. (London: Palgrave Macmillan, 2019).
+
+## Extended Deterrence | Extended deterrence and reassurance
+R: Francis Gavin, Nuclear Weapons and American Grand Strategy (Washington, D.C.: Brookings Institution Press, 2020), pp. 127-146. (19 pages)
+R: Bruce Russett, “Extended Deterrence with Nuclear Weapons: How Necessary, How Acceptable?” The Review of Politics 50, no. 2 (Spring 1988), pp. 282-302. (22 pages)
+R: Do Young Lee, “Strategies of Extended Deterrence: How States Provide the Security Umbrella,” Security Studies 30, no. 5 (2021), pp. 761-796. (35 pages)
+F: David Trachtenberg, “US Extended Deterrence: How Much Strategic Force is Too Little?” Strategic Studies Quarterly 6, no. 2 (Summer 2012): pp. 62-92.
+F: Jeffrey W. Knopf, Security Assurances and Nuclear Nonproliferation (Palo Alto, CA: Stanford University Press, 2012).
+F: Alexander Lanoszka, Atomic Assurance: The Alliance Politics of Nuclear Proliferation (Ithaca, NY: Cornell University Press, 2018).
+F: Matthew Fuhrmann, “On Extended Nuclear Deterrence,” Diplomacy and Statecraft, 2018, pp. 51-73.
+
+## Proliferation & Posture | Nuclear proliferation, nonproliferation, and posture
+R: Scott Sagan, “Why Do States Build Nuclear Weapons? Three Models in Search of a Bomb,” International Security 21, no. 3 (Winter 1996/97): 54–86. (32 pages)
+R: Francis J. Gavin, “Strategies of Inhibition: U.S. Grand Strategy, the Nuclear Revolution, and Nonproliferation,” International Security 40, no. 1 (July 2015): 9–46. (37 pages)
+R: Vipin Narang, Seeking the Bomb: Strategies of Nuclear Proliferation (Princeton, New Jersey: Princeton University Press, 2022), 15-52. (37 pages)
+F: Nuno P. Monteiro and Alexandre Debs, “The Strategic Logic of Nuclear Proliferation,” International Security 39, no. 2 (October 2014): 7–51. (44 pages)
+F: Mark S. Bell, “Beyond Emboldenment: How Acquiring Nuclear Weapons Can Change Foreign Policy,” International Security 40, no. 1 (July 2015): 87–119. (32 pages)
+F: Matthew Fuhrmann, Atomic Assistance: How “Atoms for Peace” Programs Cause Nuclear Insecurity (Ithaca: Cornell University Press, 2012).
+F: Eliza Gheorghe, “Proliferation and the Logic of the Nuclear Market,” International Security 43, no. 4 (April 2019): 88–127.
+F: Erik Gartzke and Matthew Kroenig, “Nuclear Posture, Nonproliferation Policy, and the Spread of Nuclear Weapons,” Journal of Conflict Resolution 58, no. 3 (April 2014): 395–401.
+F: Ariel E. Levite, “Never Say Never Again: Nuclear Reversal Revisited,” International Security 27, no. 3 (January 2003): 59–88.
+F: Jacques E. C. Hymans, The Psychology of Nuclear Proliferation: Identity, Emotions, and Foreign Policy (Cambridge, UK; New York: Cambridge University Press, 2006).
+F: Etel Solingen, Nuclear Logics: Contrasting Paths in East Asia and the Middle East (Princeton: Princeton University Press, 2007).
+F: Nicholas L. Miller, Stopping the Bomb: The Sources and Effectiveness of US Nonproliferation Policy (Ithaca: Cornell University Press, 2018).
+F: Rachel Elizabeth Whitlark, All Options on the Table: Leaders, Preventive War, and Nuclear Proliferation (Ithaca: Cornell University Press, 2021).
+
+## Escalation & Emerging Tech | Escalation and emerging technology
+R: “America’s Strategic Posture: The Final Report of the Congressional Commission on the Strategic Posture of the United States,” Institute for Defense Analyses, Executive Summary.
+R: Charles Glaser, James Acton, and Steven Fetter, “The U.S. Nuclear Arsenal Can Deter Both China and Russia,” Foreign Affairs, 2023.
+R: Vipin Narang and Scott Sagan, “The Dangerous Nuclear Future,” in Vipin Narang and Scott Sagan, eds., The Fragile Balance of Terror: Deterrence in the New Nuclear Age (Ithaca, NY: Cornell University Press, 2022), pp. 230-250. (20 pages)
+F: Andrew Krepinevich, “The New Nuclear Age,” Foreign Affairs (May/June 2022).
+F: Forrest Morgan et al., Dangerous Thresholds: Managing Escalation in the 21st Century (Santa Monica, CA: RAND, 2008), pp. 7-38.
+F: Charles Glaser, James Acton, and Steven Fetter, “The U.S. Arsenal Can Deter Both China and Russia,” Foreign Affairs, October 5, 2023, https://www.foreignaffairs.com/united-states/us-nuclear-arsenal-can-deter-both-china-and-russia
+F: James Johnson, “Artificial Intelligence in Nuclear Warfare: A Perfect Storm of Instability?” The Washington Quarterly 43, no. 2 (2020): 197-211.
+F: James Acton, “Escalation through Entanglement: How the Vulnerability of Command-and-Control Systems Raises the Risks of an Inadvertent Nuclear War,” International Security 43, no. 1: 56-99.
+F: David Logan, “Are They Reading Schelling in Beijing? The Dimensions, Drivers, and Risks of Nuclear-Conventional Entanglement in China,” Journal of Strategic Studies 46, no. 1 (2023): 5-55.
+F: Herman Kahn, On Escalation: Metaphors and Scenarios (New York: Praeger, 1965), Chapter 1.
+F: Barry Posen, Inadvertent Escalation: Conventional War and Nuclear Risks (Ithaca, NY: Cornell University Press, 1991), Chapter 1.
+F: Kristin Ven Bruusgaard, “Russia’s Nuclear Strategy and Conventional Inferiority,” Journal of Strategic Studies 44, no. 1 (2021): 3-35.
+F: Caitlin Talmadge, “Too Much of a Good Thing? Conventional Military Effectiveness and the Dangers of Nuclear Escalation,” in The Sword’s Other Edge: Tradeoffs in the Pursuit of Military Effectiveness, Dan Reiter, ed. (Cambridge, UK: Cambridge University Press, 2017), pp. 197-226.

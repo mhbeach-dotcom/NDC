@@ -1,0 +1,64 @@
+{
+  "title": "Nuclear Deterrence and Coercion in a Multipolar Age",
+  "term": "Winter 2026/27",
+  "quote": "“Deterrence is the art of producing in the mind of the enemy the fear to attack.”",
+  "quote_by": "Dr. Strangelove",
+  "instructors": [
+    {"name": "Dr. Tyler Bowen", "role": "Assistant Professor, United States Naval War College", "office": "MLH 321, 401-856-5772"},
+    {"name": "Dr. Jonathan Hunt", "role": "United States Naval War College", "office": "MLH 320, 401-856-6059"}
+  ],
+  "summary": [
+    "Since the Manhattan Project, U.S. political and military leaders have wrestled with how nuclear weapons can be used to influence an adversary’s decision-making. How can nuclear weapons be used to deter adversaries from taking certain actions? Can they be used to compel adversaries to take certain desired actions? Each U.S. presidential administration has had to answer these questions and articulate how nuclear weapons fit into the United States’ national security strategy.",
+    "This course is an introduction to the key concepts and technical realities that have driven debates about the nature and utility of nuclear weapons and their related delivery vehicles. Students in the course will examine and evaluate how the introduction and evolution of nuclear weapons have shaped international security and politics. They will do so with reference to scholarly debates and historical cases that bear on the drivers and dynamics of coercive diplomacy, the determinants of crisis management and escalation under the nuclear shadow, and the interaction of nuclear postures, security assurances, arms control, and weapon systems among the nuclear club, with an emphasis on U.S. national defense strategy and grand strategy."
+  ],
+  "objectives": [
+    "Be literate in the language and logic of nuclear deterrence and coercion.",
+    "Understand how and why U.S. nuclear posture, doctrine, and force structure have evolved into their current forms.",
+    "Explain how grand strategy and defense policies in the United States and other major powers take into account the unique nature of nuclear weapons and modern delivery systems.",
+    "Analyze and evaluate current and future options for U.S. nuclear force posture, structure, and acquisitions.",
+    "Analyze how the strategic nuclear balance is changing in an era of nuclear multipolarity and technological change."
+  ],
+  "assignments": [
+    {
+      "n": 1, "title": "Scenario Exercise", "words": 2500, "window": "Due weeks 5–7 (turn in any time in the window)",
+      "paras": [
+        "Choose one of three scenarios: China launching an amphibious invasion of Taiwan, Russia attacking a NATO state in Eastern Europe, or North Korea starting a crisis on the Korean Peninsula. You are free to set the scope of the crisis and fill in its details, within reason. In your scenario, you are tasked with identifying the role that nuclear weapons would play in the crisis and how you would advise the president to make sure that U.S. nuclear weapons fulfill that role."
+      ],
+      "asks": [
+        "Would nuclear weapons only deter nuclear use by the adversary? Or would you use them to coerce the adversary into restraining its non-nuclear operations as well?",
+        "Would you recommend increasing the alert status of U.S. nuclear forces or deploying some nuclear weapons forward into the theater? If so, when and how?",
+        "What verbal threats would you send to the other side?",
+        "How would you assure allies and partners about both the coercive and military threats posed by the adversary and also escalatory steps chosen by U.S. authorities?"
+      ],
+      "then": "After identifying what you would recommend, you must answer the following:",
+      "must": [
+        "Why would your recommended course of action succeed in deterring or compelling the adversary?",
+        "What is the risk of nuclear escalation in your course of action?",
+        "Why might your course of action fail? What would you do if it failed?"
+      ]
+    },
+    {
+      "n": 2, "title": "Nuclear Posture Review", "words": 2500, "window": "Due weeks 8–10 (turn in any time in the window)",
+      "paras": [
+        "Make recommendations to the United States’ Nuclear Posture Review Commission. You must identify the security threats that the United States faces. How would the United States’ nuclear weapons address those threats? What objectives would they fulfill?",
+        "Then make an argument for the level and types of nuclear forces needed to achieve those objectives. How many nuclear weapons does the United States need? On which type of launchers?",
+        "Assess whether the United States should adjust its targeting doctrine, nuclear proliferation policy, nuclear stockpile stewardship, nuclear posture, declaratory policy, and force acquisition and/or retirement.",
+        "Finally, assess whether and how you would pursue arms control with Russia or China and whether you think this nuclear posture would help achieve an arms control agreement."
+      ],
+      "asks": [], "then": "", "must": []
+    }
+  ],
+  "expectations": "This course is Pass/Fail. That being said, we hope and expect that you engage deeply with the material and questions presented in this course. We believe that issues of nuclear deterrence and coercion are quite complex and have a renewed urgency in the current security environment. By electing to take this course, we think that you agree. As instructors, we will strive to bring rigor and professionalism to each course session, and we expect you to do the same. If everyone is invested in the material and the debate, then this should be a fun and enriching course for everyone involved.",
+  "integrity": [
+    "All graded work must comply with the NWC Academic Honor Code. This includes proper citation in graded written work to avoid any form of plagiarism. Authors are expected to give full credit in their written submissions when utilizing another’s words or ideas. Moreover, authors must avoid misrepresentation. Misrepresentation is defined as reusing a single paper for more than one purpose without permission or acknowledgment, and it includes the following: (a) submitting a single paper or substantially the same paper for more than one course at the NWC without permission of the instructors; and (b) submitting a paper or substantially the same paper previously prepared for some other purpose outside the NWC without acknowledging it is an earlier work.",
+    "All unclassified, graded, written assignments will be submitted to their professors/moderators electronically through Turnitin Assignments set up in each Blackboard seminar course. Students may assess their papers through the Turnitin Student Workbooks in Blackboard to benefit from Turnitin’s Similarity Report prior to final paper submission. This will highlight areas that require additional citation. There is no percentage that means “all clear” and no percentage that means “big trouble.” Papers with as low as a 10% similarity score may have serious plagiarism concerns while a 50% similarity score could be fine (an example is a large portion of an official document attached as an appendix). Turnitin requires students to go through the markup line by line to identify and correct any problems. When submitting papers for evaluation to professors/moderators through the Blackboard seminar course, students are still able to revise and resubmit the assignment up to the assignment deadline. For this reason, faculty will refrain from downloading or otherwise viewing submissions that come in through Turnitin Assignments in their Blackboard seminar courses until the final deadline for submitting papers has passed. Students should refer any questions regarding Turnitin to their professors/moderators."
+  ],
+  "gai_intro": "ChatGPT, Claude, and other LLMs or products like Grammarly are now capable of editing, rewriting, or generating content for papers. With proper documentation, it is permissible to use them in your assignments. If you use them, you must follow the following requirements. Failure to meet these requirements will be considered an academic integrity violation.",
+  "gai_rules": [
+    "You must indicate where text has been generated or altered by a GAI system with footnotes that make clear where the affected text begins and ends.",
+    "You must include an appendix (which does not count towards your word count) that shows your work by copying and pasting the relevant interaction with the model, including all of your prompts and the raw text generated.",
+    "GAI systems still hallucinate. You are responsible for independently fact checking, sourcing, and appropriately citing any claims made in generated text that are not common or general knowledge."
+  ],
+  "gai_outro": "Overall, in all uses of GAI, students must comply with NWC policy on academic integrity. The responsible and ethical use of GAI requires that students disclose and cite the nature and extent of their use of GAI for graded assignments. In other words, when in doubt, err on the side of documenting how you used a GAI system to aid you in an assignment.",
+  "links": {}
+}

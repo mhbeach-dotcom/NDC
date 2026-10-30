@@ -1,0 +1,1619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+<meta name="format-detection" content="telephone=no">
+<title>Nuclear Deterrence and Coercion — Winter 2026/27</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0b2545;
+    --navy-deep: #071a33;
+    --navy-text: var(--navy);
+    --gold: #c9a227;
+    --gold-light: #e4c766;
+    --bg: #f5f6f8;
+    --card-bg: #ffffff;
+    --text: #1c2530;
+    --muted: #6b7688;
+    --border: #e2e5ea;
+    --link: #1a56b8;
+    --supp: #8a6d00;
+    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --sans: 'Inter', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { 
+    --bg: #10151f;
+    --card-bg: #1a2233;
+    --text: #e5e9f2;
+    --muted: #94a2ba;
+    --border: #2c3650;
+    --link: #7cb0ff;
+    --supp: #e8c368;
+    --navy-text: #8fb4e8;
+ }
+    :root:not([data-theme="light"]) { 
+    #searchBox, .toolbar-btn, .seminar-notes-panel, .cal-item { background: var(--card-bg); }
+    .epigraph p { color: #9aa8c4; }
+    .moderator-update-box, .course-update-panel { background: #2a2010; border-color: #6b4a1a; }
+    .moderator-update-box h4, .course-update-panel summary, .mu-date { color: #f0b96a; }
+    .seminar-note-box { background: #241f0c; border-color: #5a4a1a; }
+    .card-block-label { color: var(--muted); }
+    .research-countdown { background: #3a1512; border-color: #7a3129; color: #f3a99c; }
+    .research-date-item.is-next .research-date-when,
+    .research-date-item.is-next .research-date-nlt { color: #f3a99c; }
+    .event-callout { background: #2a2410; border-color: #6b5a1a; }
+    .event-callout h4 { color: #e8c368; }
+    .hero-session-row.is-live .hero-state { color: #f3a99c; }
+    .hero-live-dot { background: #f3a99c; }
+    .next-up-bar { background: #0a1830; }
+    .team-japan-card { background: #241014; border-left-color: #e0475f; }
+    .team-japan-sunburst { color: #e0475f; }
+    .team-japan-chip { background: #3a161c; color: #f5b4bd; border-color: #6b2530; }
+ }
+  }
+  :root[data-theme="dark"] { 
+    --bg: #10151f;
+    --card-bg: #1a2233;
+    --text: #e5e9f2;
+    --muted: #94a2ba;
+    --border: #2c3650;
+    --link: #7cb0ff;
+    --supp: #e8c368;
+    --navy-text: #8fb4e8;
+ }
+  :root[data-theme="dark"] { 
+    #searchBox, .toolbar-btn, .seminar-notes-panel, .cal-item { background: var(--card-bg); }
+    .epigraph p { color: #9aa8c4; }
+    .moderator-update-box, .course-update-panel { background: #2a2010; border-color: #6b4a1a; }
+    .moderator-update-box h4, .course-update-panel summary, .mu-date { color: #f0b96a; }
+    .seminar-note-box { background: #241f0c; border-color: #5a4a1a; }
+    .card-block-label { color: var(--muted); }
+    .research-countdown { background: #3a1512; border-color: #7a3129; color: #f3a99c; }
+    .research-date-item.is-next .research-date-when,
+    .research-date-item.is-next .research-date-nlt { color: #f3a99c; }
+    .event-callout { background: #2a2410; border-color: #6b5a1a; }
+    .event-callout h4 { color: #e8c368; }
+    .hero-session-row.is-live .hero-state { color: #f3a99c; }
+    .hero-live-dot { background: #f3a99c; }
+    .next-up-bar { background: #0a1830; }
+    .team-japan-card { background: #241014; border-left-color: #e0475f; }
+    .team-japan-sunburst { color: #e0475f; }
+    .team-japan-chip { background: #3a161c; color: #f5b4bd; border-color: #6b2530; }
+ }
+
+  * { box-sizing: border-box; }
+  html { overflow-x: hidden; }
+  body {
+    margin: 0;
+    font-family: var(--sans);
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    transition: background 0.2s, color 0.2s;
+  }
+  .sidebar-header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color: #fff;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+  }
+  .sidebar-header::after {
+    content: "";
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+  }
+  .sidebar-title {
+    margin: 0 0 14px;
+    font-family: var(--serif);
+    font-weight: 600;
+    font-size: 1.22rem;
+    line-height: 1.3;
+    letter-spacing: 0.2px;
+    padding-right: 24px;
+  }
+  .sidebar-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .sidebar-controls .today-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 9px 14px;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+  .sidebar-controls .theme-toggle-btn {
+    width: 38px;
+    height: 38px;
+    flex-shrink: 0;
+  }
+  .drawer-close-btn {
+    display: none;
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    width: 28px;
+    height: 28px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    border: 1.5px solid rgba(255,255,255,0.35);
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+  .drawer-close-btn svg { width: 14px; height: 14px; }
+  .drawer-close-btn:hover { background: rgba(255,255,255,0.18); }
+  .flag-icon { flex-shrink: 0; border-radius: 2px; display: inline-block; }
+  .flag-icon-inline { vertical-align: -2px; }
+  .today-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 44px;
+    font-family: var(--sans);
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--navy-deep);
+    background: var(--gold);
+    border: 1.5px solid var(--gold);
+    padding: 10px 22px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.15s;
+  }
+  .today-btn:hover { background: var(--gold-light); border-color: var(--gold-light); }
+  .today-btn:active { transform: scale(0.97); }
+  .theme-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 999px;
+    border: 1.5px solid rgba(255,255,255,0.35);
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    flex-shrink: 0;
+  }
+  .theme-toggle-btn:hover { background: rgba(255,255,255,0.18); border-color: var(--gold-light); }
+  .theme-toggle-btn svg { width: 20px; height: 20px; }
+  .icon-moon { display: none; }
+  :root[data-theme="dark"] .icon-sun { display: none; }
+  :root[data-theme="dark"] .icon-moon { display: block; }
+  .page-layout {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 28px 20px 100px;
+  }
+  .sidebar { min-width: 0; }
+  .main-col { min-width: 0; }
+
+  @media (min-width: 1100px) {
+    .page-layout {
+      display: grid;
+      grid-template-columns: 260px minmax(0, 1fr);
+      gap: 40px;
+      align-items: start;
+      padding: 36px 40px 100px;
+    }
+    .sidebar {
+      position: sticky;
+      top: 24px;
+      max-height: calc(100vh - 48px);
+      overflow-y: auto;
+      padding-bottom: 8px;
+    }
+    .sidebar .toolbar {
+      position: static;
+      flex-direction: column;
+      align-items: stretch;
+      border-bottom: none;
+      padding: 0 0 18px;
+      margin-bottom: 2px;
+    }
+    .sidebar .toolbar-btn { width: 100%; }
+    .card-body {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2px 40px;
+    }
+    .card-body > .card-block-label,
+    .card-body > .epigraph,
+    .card-body > .moderator-update-box,
+    .card-body > .seminar-note-box {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (min-width: 1500px) {
+    .page-layout { max-width: 1600px; }
+  }
+
+  .toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background: var(--bg);
+    padding: 16px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 10px;
+  }
+  .search-box-wrap {
+    position: relative;
+    flex: 1;
+    display: flex;
+  }
+  #searchBox {
+    flex: 1;
+    width: 100%;
+    min-height: 44px;
+    padding: 11px 40px 11px 16px;
+    border-radius: 999px;
+    border: 1.5px solid var(--border);
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.15s, box-shadow 0.15s;
+    background: var(--card-bg);
+    color: var(--text);
+    font-family: var(--sans);
+  }
+  #searchBox:focus {
+    border-color: var(--navy-text);
+    box-shadow: 0 0 0 3px rgba(11,37,69,0.1);
+  }
+  .search-clear-btn {
+    display: none;
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 26px;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    color: var(--muted);
+    font-size: 1.2rem;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0;
+  }
+  .search-clear-btn:hover {
+    background: var(--border);
+    color: var(--text);
+  }
+  .toolbar-btn {
+    min-height: 44px;
+    padding: 10px 16px;
+    border-radius: 999px;
+    border: 1.5px solid var(--border);
+    background: var(--card-bg);
+    color: var(--navy-text);
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+  }
+  .toolbar-btn:hover {
+    background: var(--navy);
+    color: #fff;
+    border-color: var(--navy);
+  }
+  .alert {
+    background: #fdf1e7;
+    border: 1px solid #f0c48a;
+    color: #8a4b00;
+    padding: 12px 18px;
+    border-radius: 10px;
+    margin: 14px 0 20px;
+    font-size: 0.92rem;
+  }
+  .session-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin-bottom: 0;
+    overflow: hidden;
+    box-shadow: 0 1px 2px rgba(16,24,40,0.04);
+    transition: box-shadow 0.15s;
+  }
+  .session-card:hover { box-shadow: 0 4px 14px rgba(16,24,40,0.08); }
+  .session-card[open] { box-shadow: 0 4px 18px rgba(16,24,40,0.1); }
+  .session-card summary {
+    list-style: none;
+    cursor: pointer;
+    padding: 14px 18px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    user-select: none;
+  }
+  .session-card summary::-webkit-details-marker { display: none; }
+  .session-card summary::before {
+    content: "›";
+    font-size: 1.3rem;
+    color: var(--gold);
+    font-weight: 700;
+    transform: rotate(0deg);
+    transition: transform 0.18s;
+    width: 14px;
+    flex-shrink: 0;
+  }
+  .session-card[open] summary::before { transform: rotate(90deg); }
+  .session-card summary .code {
+    font-weight: 700;
+    color: var(--navy-text);
+    font-size: 0.9rem;
+    flex-shrink: 0;
+    min-width: 60px;
+    font-family: var(--serif);
+  }
+  .session-card summary .title-wrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+  .session-card summary .title {
+    font-size: 0.95rem;
+    color: var(--text);
+  }
+  .card-meta-line {
+    font-size: 0.72rem;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .card-block-label {
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--muted);
+    margin-bottom: 12px;
+  }
+  .carryover-note { color: var(--muted); font-style: italic; margin: 0; }
+  .badges { display: flex; gap: 6px; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end; }
+  .badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--navy);
+    padding: 3px 9px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .badge-type { background: #5c6f8a; }
+  .badge-homework { background: #6a3fa0; }
+  .missing-badge { background: #c0392b; }
+  .card-body {
+    padding: 6px 22px 20px 22px;
+    border-top: 1px solid var(--border);
+    padding-top: 16px;
+  }
+
+  /* --- epigraph, subtle --- */
+  .epigraph {
+    margin: 0 0 18px;
+    padding: 4px 0 4px 14px;
+    border-left: 2px solid var(--gold);
+    background: transparent;
+  }
+  .epigraph p {
+    margin: 0;
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.87rem;
+    color: #566078;
+    line-height: 1.5;
+  }
+  .epigraph footer {
+    margin-top: 4px;
+    font-size: 0.74rem;
+    color: var(--muted);
+    font-style: normal;
+    letter-spacing: 0.1px;
+  }
+
+  /* --- subsections --- */
+  .subsection { margin-bottom: 18px; }
+  .subsection:last-child { margin-bottom: 0; }
+  .subsection h4 {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 0 0 8px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--navy-text);
+  }
+  .sec-icon {
+    display: inline-flex;
+    width: 15px; height: 15px;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+  .sec-icon svg { width: 100%; height: 100%; }
+  .subsection p {
+    margin: 0 0 8px;
+    font-size: 0.9rem;
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .subsection p:last-child { margin-bottom: 0; }
+
+  ul.plain-list {
+    margin: 0 0 8px;
+    padding-left: 20px;
+    font-size: 0.9rem;
+    line-height: 1.55;
+  }
+  ol.plain-list { margin: 0 0 8px; padding-left: 24px; font-size: 0.9rem; line-height: 1.55; }
+  ol.plain-list li { margin-bottom: 5px; }
+  ol.q-list li::marker { color: #9aa5b8; font-weight: 600; }
+  ul.plain-list:last-child { margin-bottom: 0; }
+  ul.plain-list li { margin-bottom: 5px; }
+  ul.plain-list li::marker { color: var(--gold); }
+  ul.obj-list li::marker { color: var(--gold); }
+  ul.sub-list { margin: 6px 0 10px; }
+  ul.q-list li::marker { color: #9aa5b8; }
+
+  .q-group-label {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #45516a;
+    margin: 10px 0 4px;
+    padding-top: 6px;
+    border-top: 1px dashed var(--border);
+  }
+  .q-group-label:first-child { border-top: none; padding-top: 0; margin-top: 0; }
+
+  /* --- reading citations + read-state checkboxes --- */
+  ul.cite-list { list-style: none; margin: 0; padding: 0; }
+  li.cite {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    border-bottom: 1px dashed var(--border);
+  }
+  li.cite.cite-deleted .cite-text a, li.cite.cite-deleted .cite-text .plain { text-decoration: line-through; opacity: 0.65; }
+  li.cite:last-child { border-bottom: none; }
+  li.cite.cite-req {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    padding: 3px 0;
+  }
+  li.cite.supp {
+    position: relative;
+    padding: 7px 0 7px 20px;
+  }
+  li.cite.supp::before {
+    content: "•";
+    position: absolute;
+    left: 2px;
+    color: #c9b45e;
+    font-weight: 700;
+  }
+  .read-toggle {
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    cursor: pointer;
+  }
+  .read-checkbox {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--gold);
+    cursor: pointer;
+  }
+  .cite-text { flex: 1; min-width: 0; }
+  li.cite.is-read .cite-text { color: var(--muted); }
+  li.cite.is-read .cite-text a { color: var(--muted); text-decoration-color: var(--muted); }
+  li.cite.is-read .cite-text,
+  li.cite.is-read .cite-text .plain,
+  li.cite.is-read .cite-text a { text-decoration: line-through; }
+  li.cite a {
+    color: var(--link);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(26,86,184,0.3);
+  }
+  li.cite a:hover { border-bottom-color: var(--link); background: rgba(26,86,184,0.06); }
+  li.cite .plain { color: var(--text); }
+  .muted-note { color: var(--muted); font-style: italic; font-size: 0.88rem; margin: 0; }
+  .supp-label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: var(--supp);
+    margin-bottom: 8px;
+  }
+  .supp-label .opt { font-weight: 400; text-transform: none; color: var(--muted); font-style: italic; }
+  .missing-note { color: #c0392b; font-style: italic; font-size: 0.9rem; margin: 0; }
+
+  .no-results {
+    display: none;
+    text-align: center;
+    color: var(--muted);
+    padding: 40px 0;
+    font-style: italic;
+  }
+  .search-status {
+    display: none;
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin: -4px 0 12px 2px;
+  }
+  mark.search-hl {
+    background: #ffe066;
+    color: #1a1a1a;
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+  .back-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 24px;
+    background: var(--navy);
+    color: #fff;
+    border: none;
+    border-radius: 999px;
+    width: 44px;
+    height: 44px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(11,37,69,0.35);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.15s;
+    z-index: 40;
+  }
+  .back-to-top.show { display: flex; }
+  .back-to-top:hover { background: var(--navy-deep); }
+
+  .next-up-bar {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 44;
+    background: var(--navy);
+    color: #fff;
+    padding: 10px 16px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-family: var(--sans);
+    font-size: 0.84rem;
+    box-shadow: 0 -2px 12px rgba(16,24,40,0.18);
+  }
+  .next-up-bar.show { display: flex; }
+  .next-up-text { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .next-up-jump {
+    background: var(--gold);
+    color: var(--navy-deep);
+    border: none;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    cursor: pointer;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  footer.page-footer {
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.8rem;
+    padding: 30px 20px 50px;
+  }
+
+  @media print {
+    .toolbar, .back-to-top, .bottom-nav, .theme-toggle-btn, .sidebar, .drawer-backdrop, .hero-today, .next-up-bar { display: none !important; }
+    .page-layout { display: block !important; max-width: none; }
+    .session-card { break-inside: avoid; box-shadow: none; }
+    .card-body { display: block !important; }
+  }
+
+  /* --- key dates / off-sites / seminar notes --- */
+  .cal-intro { margin: 4px 0 18px; }
+  .cal-intro p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.92rem;
+    font-style: italic;
+    font-family: var(--serif);
+  }
+
+  .seminar-notes-panel {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin: 4px 0 20px;
+    overflow: hidden;
+  }
+  .seminar-notes-panel summary {
+    cursor: pointer;
+    padding: 13px 18px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: var(--navy-text);
+    list-style: none;
+  }
+  .seminar-notes-panel summary::-webkit-details-marker { display: none; }
+  .seminar-notes-panel summary::before { content: "\25B8"; color: var(--gold); margin-right: 8px; }
+  .seminar-notes-panel[open] summary::before { content: "\25BE"; }
+  .sn-body { padding: 4px 20px 20px; border-top: 1px solid var(--border); }
+  .mod-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 12px;
+    margin: 14px 0 16px;
+  }
+  .mod-card {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 12px 14px;
+  }
+  .mod-name { font-weight: 700; font-size: 0.88rem; color: var(--navy-text); font-family: var(--serif); }
+  .mod-role { font-size: 0.74rem; color: var(--muted); margin: 2px 0 6px; }
+  .mod-contact { font-size: 0.78rem; color: var(--text); line-height: 1.5; }
+  .mod-contact a { color: var(--link); text-decoration: none; }
+  .sn-notes-list { margin-top: 4px; }
+  .sn-notes-list li { font-size: 0.86rem; margin-bottom: 8px; }
+
+
+  /* --- research paper dates panel --- */
+  .research-panel {
+    margin: 2px 0 22px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--border);
+  }
+  .research-panel-title {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .hero-today {
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 8px clamp(16px, 4vw, 32px);
+  }
+  .hero-today-inner { max-width: 1400px; margin: 0 auto; display: flex; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .hero-today-label {
+    font-size: 0.72rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--gold);
+    flex-shrink: 0;
+  }
+  .hero-today-sessions { display: flex; flex-wrap: wrap; gap: 10px; flex: 1; min-width: 0; }
+  .hero-session-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 4px 12px;
+    font-family: var(--sans);
+    cursor: pointer;
+    text-align: left;
+    min-width: 0;
+    max-width: 100%;
+  }
+  .hero-session-code { font-weight: 700; color: var(--navy-text); flex-shrink: 0; }
+  .hero-session-title { color: var(--text); font-size: 0.88rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+  .hero-state { font-size: 0.76rem; font-weight: 700; color: var(--muted); margin-left: auto; white-space: nowrap; }
+  .hero-session-row.is-live .hero-state { color: #a23225; }
+  .hero-live-dot {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #a23225;
+    margin-right: 4px;
+    animation: heroLivePulse 1.4s ease-in-out infinite;
+  }
+  @keyframes heroLivePulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+  .hero-session-row.is-done { opacity: 0.6; }
+
+  .research-countdown {
+    background: #fdecea;
+    border: 1px solid #f3b4ac;
+    color: #a23225;
+    border-radius: 10px;
+    padding: 10px 12px;
+    margin-bottom: 14px;
+    line-height: 1.4;
+    font-size: 0.72rem;
+  }
+  .research-countdown .rc-label {
+    display: block;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    opacity: 0.85;
+    margin-bottom: 2px;
+  }
+  .research-countdown .rc-time { font-weight: 700; }
+  .research-countdown .rc-desc { font-weight: 500; }
+  .research-date-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .research-date-item[hidden] { display: none; }
+  .research-date-item { font-size: 0.78rem; line-height: 1.4; }
+  .research-date-when {
+    font-weight: 700;
+    color: var(--navy-text);
+    font-family: var(--serif);
+  }
+  .research-date-nlt {
+    font-weight: 600;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.68rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+  }
+  .research-date-desc { color: var(--text); }
+  .research-date-item.is-next .research-date-when { color: #a23225; }
+  .research-date-item.is-next .research-date-nlt { color: #a23225; }
+  .research-date-empty { font-size: 0.78rem; color: var(--muted); font-style: italic; margin: 0; }
+
+  /* --- homework / exercise / event tags --- */
+  .hw-ribbon {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #6a3fa0;
+    padding: 3px 9px;
+    border-radius: 999px;
+    margin: 0 0 8px 6px;
+  }
+  .tag-pill {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    margin-right: 6px;
+    flex-shrink: 0;
+    vertical-align: 2px;
+  }
+  .tag-homework { background: #6a3fa0; }
+  .tag-event { background: var(--gold); color: var(--navy-deep); }
+  .tag-exercise { background: #1f7a5c; }
+  .event-callout {
+    background: #fdf8ec;
+    border: 1.5px solid var(--gold-light);
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .event-callout h4 { color: #8a6d00; margin: 0 0 8px; }
+  .event-callout .sec-icon { color: var(--gold); }
+  .event-callout p { margin: 6px 0; }
+
+  /* --- agenda --- */
+  .cal-month-header {
+    font-family: var(--serif);
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--navy-text);
+    margin: 34px 0 14px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--gold);
+    scroll-margin-top: 76px;
+  }
+  .cal-month-header:first-of-type { margin-top: 6px; }
+  .cal-day {
+    display: flex;
+    gap: 16px;
+    padding: 14px 0;
+    border-bottom: 1px dashed var(--border);
+    scroll-margin-top: 76px;
+    border-radius: 6px;
+  }
+  .cal-day.flash { animation: flashbg 1.6s ease; }
+  @keyframes flashbg {
+    0% { background: rgba(201,162,39,0.28); }
+    100% { background: transparent; }
+  }
+  .cal-day-date {
+    flex-shrink: 0;
+    width: 84px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 2px;
+  }
+  .cal-dow { font-size: 0.7rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .cal-dnum { font-size: 0.98rem; font-weight: 700; color: var(--navy-text); font-family: var(--serif); }
+  .cal-day-items { flex: 1; display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  .cal-item {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    font-family: var(--sans);
+    font-size: 0.86rem;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border-left: 3px solid var(--border);
+    background: var(--card-bg);
+    text-align: left;
+    width: 100%;
+  }
+  button.cal-item {
+    cursor: pointer;
+    min-height: 44px;
+    border-top: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    transition: box-shadow 0.15s, border-color 0.15s;
+    font: inherit;
+    color: inherit;
+  }
+  button.cal-item:hover { box-shadow: 0 2px 10px rgba(16,24,40,0.1); }
+  .cal-item-continuation { border-left-style: dashed; opacity: 0.92; }
+  .cal-item-time { font-size: 0.74rem; font-weight: 700; color: var(--muted); flex-shrink: 0; min-width: 46px; }
+  .cal-item-main { color: var(--text); line-height: 1.4; }
+  .cal-item-code { font-weight: 700; color: var(--navy-text); font-family: var(--serif); }
+  .cal-item-format { color: var(--muted); font-size: 0.82rem; }
+  .cal-guest, .cal-sn-flag, .cal-tag {
+    font-size: 0.68rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    flex-shrink: 0;
+  }
+  .cal-guest { background: #eef2fb; color: #2a4a9e; }
+  .cal-sn-flag { background: #fdf1e7; color: #8a4b00; }
+  .cal-tag { color: #fff; }
+
+  .cal-item-session { border-left-color: var(--navy-text); }
+  .cal-item-admin { border-left-color: #b7bfcc; color: var(--muted); }
+  .cal-item-admin .cal-item-main { color: var(--muted); font-style: italic; }
+  .cal-item-offsite { border-left-color: #0b7d6b; }
+  .cal-item-offsite .cal-tag { background: #0b7d6b; }
+  .cal-item-deadline { border-left-color: #c0392b; }
+  .cal-item-deadline .cal-tag { background: #c0392b; }
+  .cal-item-homework { border-left-color: #6a3fa0; }
+  .cal-item-homework .cal-tag { background: #6a3fa0; }
+  .cal-item-resource { border-left-color: #4a5568; }
+  .cal-item-resource .cal-tag { background: #4a5568; }
+  .cal-item-resource.cal-offsite-card summary::after { color: #4a5568; }
+  .past-exam-year:not(:first-child) { margin-top: 14px; }
+  .cal-item-social { border-left-color: var(--gold); }
+  .cal-item-social .cal-tag { background: var(--gold); color: var(--navy-deep); }
+  .cal-item-note { border-left-color: #7a8aa8; }
+  .cal-item-note .cal-item-main { font-style: italic; color: var(--muted); }
+  .cal-item-note .cal-tag { background: #7a8aa8; }
+  .cal-offsite-card { padding: 0; display: block; }
+  .cal-offsite-card summary {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 12px;
+    list-style: none;
+    cursor: pointer;
+    user-select: none;
+  }
+  .cal-offsite-card summary::-webkit-details-marker { display: none; }
+  .cal-offsite-card summary::after {
+    content: "›";
+    font-size: 1.1rem;
+    color: #0b7d6b;
+    font-weight: 700;
+    margin-left: auto;
+    transform: rotate(90deg);
+    transition: transform 0.18s;
+  }
+  .cal-offsite-card[open] summary::after { transform: rotate(-90deg); }
+  .cal-offsite-card .offsite-body { padding: 0 12px 10px 12px; }
+  .cal-offsite-card .offsite-body ul.plain-list { margin: 0; }
+
+  /* --- session card embedded in agenda --- */
+  .cal-session-card { border-left: 3px solid var(--navy-text); }
+
+  .team-japan-card { position: relative; border-left: 3px solid #bc002d; background: #fdfaf5; }
+  .team-japan-sunburst-wrap {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .team-japan-sunburst { display: block; width: 100%; height: 100%; color: #bc002d; }
+  .team-japan-sunburst path { fill: currentColor; }
+  .team-japan-card > summary { position: relative; z-index: 1; }
+  .team-japan-card > .card-body { position: relative; z-index: 1; background: var(--card-bg); }
+  .team-japan-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: #8a0021;
+    background: #fdf0f0;
+    border: 1px solid #f2c6c6;
+    padding: 2px 9px 2px 7px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  .seminar-note-box {
+    background: #fdf8ec;
+    border: 1px solid #ecd9a0;
+    border-radius: 10px;
+    padding: 12px 16px;
+  }
+  .seminar-note-box h4 { color: #8a6d00; }
+  .seminar-note-box .sec-icon { color: #c9a227; }
+  .sn-q-heading { font-size: 0.82rem; font-weight: 700; color: var(--text); margin: 8px 0 4px; }
+
+  .session-card.flash { animation: flashcard 1.6s ease; }
+  @keyframes flashcard {
+    0% { box-shadow: 0 0 0 3px rgba(201,162,39,0.55); }
+    100% { box-shadow: 0 1px 2px rgba(16,24,40,0.04); }
+  }
+
+  /* --- NEW moderator-update content (12 Aug 2026 guidance) --- */
+  .badge-new { background: #e8590c; }
+  .moderator-update-box {
+    background: #fff4e9;
+    border: 1.5px solid #f3a35c;
+    border-radius: 10px;
+    padding: 14px 16px;
+  }
+  .moderator-update-box h4 { color: #b3480a; }
+  .moderator-update-box .sec-icon { color: #e8590c; }
+  .mu-ribbon {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.62rem;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #e8590c;
+    padding: 3px 9px;
+    border-radius: 999px;
+    margin-bottom: 8px;
+  }
+  .mu-date {
+    font-weight: 600;
+    color: #b3480a;
+    font-size: 0.7rem;
+    text-transform: none;
+    letter-spacing: 0;
+    margin-left: 4px;
+  }
+  .mu-subhead {
+    font-weight: 700;
+    font-size: 0.82rem;
+    color: var(--text);
+    margin: 12px 0 4px;
+    padding-top: 8px;
+    border-top: 1px dashed #f0c48a;
+  }
+  .mu-subhead:first-child { border-top: none; padding-top: 0; margin-top: 0; }
+  .moderator-update-box .plain-list li::marker { color: #e8590c; }
+  .moderator-update-box a { color: #b3480a; }
+
+  .course-update-panel {
+    background: #fff4e9;
+    border: 1.5px solid #f3a35c;
+    border-radius: 12px;
+    margin: 4px 0 20px;
+    overflow: hidden;
+  }
+  .course-update-panel summary {
+    cursor: pointer;
+    padding: 13px 18px;
+    min-height: 44px;
+    font-weight: 700;
+    font-size: 0.88rem;
+    color: #b3480a;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  .course-update-panel summary::-webkit-details-marker { display: none; }
+  .course-update-panel summary::before { content: "\25B8"; color: #e8590c; }
+  .course-update-panel[open] summary::before { content: "\25BE"; }
+  .course-update-panel .sn-body { padding: 4px 20px 20px; border-top: 1px solid #f3a35c; }
+  .course-update-panel .mu-subhead { border-top-color: #f3a35c; }
+
+  .cal-updated-flag {
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    color: #b3480a;
+    background: #ffe4cc;
+    padding: 2px 8px;
+    border-radius: 999px;
+    flex-shrink: 0;
+  }
+  .cal-item-detail {
+    display: block;
+    font-size: 0.78rem;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  /* --- fixed bottom navigation (mobile only) --- */
+  .bottom-nav {
+    display: none;
+  }
+  .drawer-backdrop {
+    display: none;
+  }
+
+  /* ===================== RESPONSIVE / MOBILE ===================== */
+  /* sidebar becomes an off-canvas drawer below desktop width */
+  @media (max-width: 1099.98px) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100dvh;
+      width: min(86vw, 340px);
+      max-width: 340px;
+      background: var(--bg);
+      z-index: 60;
+      padding: 20px 16px 24px;
+      overflow-y: auto;
+      box-shadow: 2px 0 28px rgba(16,24,40,0.28);
+      transform: translateX(-100%);
+      transition: transform 0.25s ease;
+    }
+    .sidebar.open { transform: translateX(0); }
+    .drawer-close-btn { display: inline-flex; }
+    .drawer-backdrop {
+      display: block;
+      position: fixed;
+      inset: 0;
+      background: rgba(8,12,20,0.5);
+      z-index: 55;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+    .drawer-backdrop.open { opacity: 1; pointer-events: auto; }
+
+    /* bottom nav is the drawer trigger, so show it whenever the sidebar is off-canvas */
+    .bottom-nav {
+      display: flex;
+      position: fixed;
+      left: 0; right: 0; bottom: 0;
+      z-index: 45;
+      background: var(--card-bg);
+      border-top: 1px solid var(--border);
+      box-shadow: 0 -2px 12px rgba(16,24,40,0.12);
+      padding-bottom: env(safe-area-inset-bottom, 0);
+    }
+    .bottom-nav button {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 3px;
+      min-height: 58px;
+      background: none;
+      border: none;
+      color: var(--muted);
+      font-family: var(--sans);
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.2px;
+      cursor: pointer;
+      padding: 6px 4px;
+    }
+    .bottom-nav button svg { width: 20px; height: 20px; }
+    .bottom-nav button:active { color: var(--navy-text); }
+    .bottom-nav button.active { color: var(--gold); }
+    .page-layout { padding-bottom: 110px; }
+    .next-up-bar { bottom: 58px; padding-bottom: calc(10px + env(safe-area-inset-bottom, 0)); }
+    .back-to-top { bottom: 116px; }
+  }
+
+  @media (max-width: 720px) {
+    .sidebar-title { font-size: 1.12rem; }
+
+    .page-layout { padding: 20px 14px 128px; }
+    .cal-intro p { font-size: 0.85rem; }
+
+    .seminar-notes-panel summary { padding: 12px 14px; font-size: 0.84rem; }
+    .course-update-panel summary { padding: 12px 14px; font-size: 0.84rem; }
+    .course-update-panel .sn-body { padding: 4px 14px 16px; }
+    .moderator-update-box { padding: 12px 14px; }
+    .sn-body { padding: 4px 14px 16px; }
+    .mod-grid { grid-template-columns: 1fr; gap: 10px; }
+
+    .toolbar { flex-wrap: wrap; padding: 12px 0; gap: 8px; }
+    .search-box-wrap { flex: 1 1 100%; }
+    #searchBox { padding: 10px 40px 10px 14px; font-size: 0.9rem; }
+    .toolbar-btn { flex: 1 1 auto; padding: 9px 12px; font-size: 0.8rem; }
+
+    .cal-month-header { font-size: 1rem; margin: 26px 0 10px; }
+    .cal-day { flex-direction: column; gap: 8px; padding: 12px 0; }
+    .cal-day-date {
+      flex-direction: row;
+      align-items: baseline;
+      gap: 6px;
+      width: auto;
+    }
+    .cal-day-items { gap: 6px; }
+
+    .session-card summary {
+      flex-wrap: wrap;
+      padding: 12px 14px;
+      gap: 6px 10px;
+    }
+    .session-card summary .code { min-width: 0; font-size: 0.84rem; }
+    .session-card summary .title-wrap { flex: 1 1 100%; order: 3; }
+    .session-card summary .title { font-size: 0.9rem; }
+    .badges { justify-content: flex-start; }
+    .card-body { padding: 14px 16px 18px; }
+    .card-block-label { font-size: 0.62rem; }
+
+    .cal-item {
+      padding: 8px 10px;
+      font-size: 0.82rem;
+      gap: 6px;
+    }
+    .cal-item-time { min-width: 0; }
+    .cal-item-code { font-size: 0.85rem; }
+
+    .subsection h4 { font-size: 0.68rem; }
+    .subsection p, ul.plain-list, li.cite { font-size: 0.86rem; }
+
+    .back-to-top { width: 44px; height: 44px; bottom: 116px; right: 16px; font-size: 1rem; }
+
+    footer.page-footer { font-size: 0.74rem; padding: 24px 16px 40px; }
+  }
+
+  @media (max-width: 420px) {
+    .sidebar-title { font-size: 1rem; }
+    .cal-item-main { font-size: 0.82rem; }
+    .bottom-nav button { font-size: 0.6rem; }
+  }
+
+  /* ===== Strategy & Policy additions ===== */
+  .card-body > .subsection.span-all { grid-column: 1 / -1; }
+  .cal-item-lecture { border-left-color: var(--navy-text); }
+  .cal-item-seminar { border-left-color: #0b7d6b; }
+  .cal-item-seminar .cal-tag { background: #0b7d6b; }
+  .cal-item-lecture .cal-tag { background: var(--navy); }
+  .cal-item-pmw { border-left-color: #6a3fa0; }
+  .cal-item-pmw .cal-tag { background: #6a3fa0; }
+  .cal-item-elective { border-left-color: var(--gold); }
+  .cal-item-elective .cal-tag { background: var(--gold); color: var(--navy-deep); }
+  .cal-item-holiday { border-left-color: #2f9e6b; background: transparent; }
+  .cal-item-holiday .cal-item-main { color: #1f7a4f; font-weight: 600; }
+  .cal-item-event { border-left-color: #c0392b; }
+  .cal-item-event .cal-tag { background: #c0392b; }
+  .cal-item-reflect { border-left-color: #7a8aa8; }
+  .cal-item-casehdr { border-left-color: var(--gold); background: var(--card-bg); }
+  button.cal-item-casehdr .cal-item-main { font-weight: 700; color: var(--navy-text); font-family: var(--serif); }
+  .cal-item-go { margin-left: auto; font-size: 0.74rem; color: var(--link); font-weight: 600; }
+  .case-pill {
+    display: inline-block; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.4px;
+    text-transform: uppercase; color: var(--navy-deep); background: var(--gold-light);
+    padding: 2px 8px; border-radius: 999px; margin-top: 4px; white-space: nowrap;
+  }
+  .cal-day-date .case-pill { align-self: flex-start; }
+  .lec-list { list-style: none; margin: 0; padding: 0; }
+  .lec-list li { padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; line-height: 1.4; }
+  .lec-list li:last-child { border-bottom: none; }
+  .lec-when { display: inline-block; min-width: 62px; font-size: 0.74rem; font-weight: 700; color: var(--muted); }
+  .lec-who { color: var(--muted); font-size: 0.84rem; }
+  .lec-jump { background: none; border: none; padding: 0; font: inherit; color: var(--link); cursor: pointer; text-align: left; }
+  .lec-jump:hover { text-decoration: underline; }
+  .cite-note { display: block; margin-top: 3px; font-size: 0.8rem; color: var(--muted); line-height: 1.45; }
+  .cite-src { font-size: 0.68rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; color: var(--supp); margin-left: 6px; }
+  details.more { margin-top: 10px; }
+  details.more > summary { cursor: pointer; color: var(--link); font-size: 0.86rem; font-weight: 600; padding: 4px 0; }
+  details.more p { margin: 8px 0; }
+  .case-index { list-style: none; margin: 0; padding: 0; }
+  .case-index li { margin: 0; }
+  .case-index button {
+    display: flex; gap: 8px; align-items: baseline; width: 100%; text-align: left;
+    background: none; border: none; border-radius: 6px; padding: 5px 6px; cursor: pointer;
+    font: inherit; font-size: 0.8rem; color: var(--text); line-height: 1.3;
+  }
+  .case-index button:hover { background: rgba(201,162,39,0.14); }
+  .case-index .ci-num { font-weight: 700; font-family: var(--serif); color: var(--navy-text); min-width: 34px; }
+  .case-index .ci-dates { margin-left: auto; color: var(--muted); font-size: 0.72rem; white-space: nowrap; }
+  .sem-pick { display: flex; gap: 6px; align-items: center; font-size: 0.8rem; color: var(--muted); margin: 0 0 12px; }
+  .sem-pick select { flex: 1; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--border); background: var(--card-bg); color: var(--text); font: inherit; }
+  body[data-sem="even"] .sem-odd, body[data-sem="odd"] .sem-even { display: none !important; }
+  .ref-section { margin-top: 36px; }
+  .ref-section > h2 { font-family: var(--serif); color: var(--navy-text); font-size: 1.25rem; margin: 0 0 10px; }
+  .ref-panel { background: var(--card-bg); border: 1px solid var(--border); border-radius: 10px; margin-bottom: 10px; }
+  .ref-panel > summary { cursor: pointer; padding: 12px 16px; font-weight: 600; color: var(--navy-text); }
+  .ref-panel .ref-body { padding: 0 18px 14px; font-size: 0.92rem; line-height: 1.55; }
+  .ref-panel .ref-body p { margin: 8px 0; }
+  .ref-panel .ref-body h5 { margin: 12px 0 4px; font-size: 0.9rem; color: var(--navy-text); }
+  .ref-links a { color: var(--link); }
+  .page-footer a { color: var(--link); }
+
+  /* case banner = the case card, placed between day rows */
+  #calAgenda > .session-card { margin: 22px 0 6px; border-left: 4px solid var(--gold); }
+  #calAgenda > .session-card > summary { background: linear-gradient(90deg, rgba(201,162,39,0.14), transparent 60%); }
+  #calAgenda > .session-card .card-meta-line { font-size: 0.78rem; }
+  .between-cases { margin: 22px 0 4px; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; color: var(--muted); border-top: 1px dashed var(--border); padding-top: 8px; }
+
+/* ===== Nuclear Deterrence additions ===== */
+.course-hero { background: linear-gradient(135deg, var(--navy-deep), var(--navy)); color: #fff; border-radius: 12px; padding: 22px 24px; margin: 0 0 22px; }
+.course-hero h2 { font-family: var(--serif); font-size: 1.55rem; line-height: 1.25; margin: 0 0 4px; color: #fff; }
+.course-hero .term { font-size: 0.82rem; letter-spacing: 0.6px; text-transform: uppercase; color: var(--gold-light); font-weight: 700; margin: 0 0 12px; }
+.course-hero blockquote { margin: 0 0 14px; padding-left: 14px; border-left: 3px solid var(--gold); font-family: var(--serif); font-style: italic; font-size: 1.02rem; line-height: 1.45; }
+.course-hero blockquote cite { display: block; margin-top: 4px; font-style: normal; font-size: 0.8rem; color: var(--gold-light); }
+.course-hero .profs { display: flex; flex-wrap: wrap; gap: 6px 22px; font-size: 0.84rem; line-height: 1.45; }
+.course-hero .profs span { display: block; color: #c8d2e6; font-size: 0.78rem; }
+.lessons-label { margin: 26px 0 8px; font-family: var(--serif); color: var(--navy-text); font-size: 1.25rem; }
+#lessonList > .session-card { margin: 0 0 12px; border-left: 4px solid var(--gold); }
+#lessonList > .session-card > summary { background: linear-gradient(90deg, rgba(201,162,39,0.14), transparent 60%); }
+.lead-note { margin: 0 0 12px; font-size: 0.86rem; color: var(--muted); font-style: italic; }
+.cite-pages { font-size: 0.68rem; font-weight: 700; color: var(--muted); border: 1px solid var(--border); border-radius: 4px; padding: 0 5px; margin-left: 6px; white-space: nowrap; }
+.cite-note { font-style: italic; }
+.cite-list.further .cite-text { color: var(--muted); }
+.cite-further-label { font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); margin: 14px 0 4px; }
+.assign-box { border: 1px solid var(--border); border-left: 4px solid var(--gold); border-radius: 8px; padding: 12px 16px; margin: 10px 0; background: var(--card-bg); }
+.assign-box h5 { margin: 0 0 2px; font-family: var(--serif); font-size: 1rem; color: var(--navy-text); }
+.assign-box .window { font-size: 0.8rem; font-weight: 700; color: var(--muted); margin: 0 0 8px; }
+.assign-box ul, .assign-box ol { margin: 6px 0 6px 20px; padding: 0; }
+.assign-box li { margin: 3px 0; }
+.ref-body ol, .ref-body ul { margin: 6px 0 6px 20px; padding: 0; }
+.ref-body li { margin: 4px 0; }
+.prog-line { font-size: 0.8rem; color: var(--muted); margin: 6px 0 0; }
+
+</style>
+</head>
+<body>
+
+<noscript>
+  <div style="background:#fdf1e7;color:#8a4b00;padding:14px 20px;text-align:center;font-family:sans-serif;font-size:0.9rem;border-bottom:2px solid #f0c48a;">
+    JavaScript is blocked in this viewer, so interactive features (dark mode, search, reading checkboxes) won't work. If you're viewing this inside a messaging app's built-in preview, open this file in Safari/Chrome instead.
+  </div>
+</noscript>
+
+<div class="drawer-backdrop" id="drawerBackdrop" data-action="close-drawer"></div>
+
+<div class="page-layout">
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <button type="button" class="drawer-close-btn" data-action="close-drawer" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <h1 class="sidebar-title">Nuclear Deterrence &amp; Coercion &mdash; Lessons &amp; Readings</h1>
+      <div class="sidebar-controls">
+        <button type="button" class="today-btn" data-action="next-unread">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+          Next unread reading
+        </button>
+        <button type="button" class="theme-toggle-btn" data-action="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="toolbar">
+      <div class="search-box-wrap">
+        <input id="searchBox" type="text" placeholder="Search lessons, readings, authors…" autocomplete="off">
+        <button type="button" class="search-clear-btn" id="searchClearBtn" aria-label="Clear search" title="Clear search">&times;</button>
+      </div>
+      <button type="button" class="toolbar-btn" data-action="expand-all">Expand all</button>
+      <button type="button" class="toolbar-btn" data-action="collapse-all">Collapse all</button>
+    </div>
+    <div class="search-status" id="searchStatus" aria-live="polite"></div>
+
+    <div class="research-panel">
+      <div class="research-panel-title">Lessons</div>
+      <ul class="case-index"><li><button type="button" data-jump-session="1"><span class="ci-num">1</span><span>Great Debate</span></button></li><li><button type="button" data-jump-session="2"><span class="ci-num">2</span><span>Terminology</span></button></li><li><button type="button" data-jump-session="3"><span class="ci-num">3</span><span>Risk &amp; Uncertainty</span></button></li><li><button type="button" data-jump-session="4"><span class="ci-num">4</span><span>Brinkmanship &amp; Berlin</span></button></li><li><button type="button" data-jump-session="5"><span class="ci-num">5</span><span>Cuban Missile Crisis</span></button></li><li><button type="button" data-jump-session="6"><span class="ci-num">6</span><span>Superiority &amp; Damage Limitation</span></button></li><li><button type="button" data-jump-session="7"><span class="ci-num">7</span><span>Arms Racing &amp; Arms Control</span></button></li><li><button type="button" data-jump-session="8"><span class="ci-num">8</span><span>Extended Deterrence</span></button></li><li><button type="button" data-jump-session="9"><span class="ci-num">9</span><span>Proliferation &amp; Posture</span></button></li><li><button type="button" data-jump-session="10"><span class="ci-num">10</span><span>Escalation &amp; Emerging Tech</span></button></li></ul>
+      <p class="prog-line" id="progLine"></p>
+      <p style="margin:10px 0 0;font-size:0.78rem"><button type="button" class="lec-jump" data-jump-ref="reference">Course summary, assignments &amp; policies &rsaquo;</button></p>
+    </div>
+  </aside>
+
+  <div class="main-col">
+    <section class="course-hero"><p class="term">Winter 2026/27 &middot; Pass/Fail</p><h2>Nuclear Deterrence and Coercion in a Multipolar Age</h2><blockquote>“Deterrence is the art of producing in the mind of the enemy the fear to attack.”<cite>&mdash; Dr. Strangelove</cite></blockquote><div class="profs"><div>Dr. Tyler Bowen<span>Assistant Professor, United States Naval War College &middot; MLH 321, 401-856-5772</span></div><div>Dr. Jonathan Hunt<span>United States Naval War College &middot; MLH 320, 401-856-6059</span></div></div></section>
+    <section class="ref-section" id="reference"><h2>Course Reference</h2><details class="ref-panel" open><summary>Course summary</summary><div class="ref-body"><p>Since the Manhattan Project, U.S. political and military leaders have wrestled with how nuclear weapons can be used to influence an adversary’s decision-making. How can nuclear weapons be used to deter adversaries from taking certain actions? Can they be used to compel adversaries to take certain desired actions? Each U.S. presidential administration has had to answer these questions and articulate how nuclear weapons fit into the United States’ national security strategy.</p><p>This course is an introduction to the key concepts and technical realities that have driven debates about the nature and utility of nuclear weapons and their related delivery vehicles. Students in the course will examine and evaluate how the introduction and evolution of nuclear weapons have shaped international security and politics. They will do so with reference to scholarly debates and historical cases that bear on the drivers and dynamics of coercive diplomacy, the determinants of crisis management and escalation under the nuclear shadow, and the interaction of nuclear postures, security assurances, arms control, and weapon systems among the nuclear club, with an emphasis on U.S. national defense strategy and grand strategy.</p></div></details><details class="ref-panel"><summary>Course objectives</summary><div class="ref-body"><p>After this course, you should:</p><ul><li>Be literate in the language and logic of nuclear deterrence and coercion.</li><li>Understand how and why U.S. nuclear posture, doctrine, and force structure have evolved into their current forms.</li><li>Explain how grand strategy and defense policies in the United States and other major powers take into account the unique nature of nuclear weapons and modern delivery systems.</li><li>Analyze and evaluate current and future options for U.S. nuclear force posture, structure, and acquisitions.</li><li>Analyze how the strategic nuclear balance is changing in an era of nuclear multipolarity and technological change.</li></ul></div></details><details class="ref-panel" id="assignments" open><summary>Main assignments (2 &times; 2,500 words)</summary><div class="ref-body"><div class="assign-box"><h5>Assignment 1: Scenario Exercise (2,500 words)</h5><p class="window">Due weeks 5–7 (turn in any time in the window)</p><p>Choose one of three scenarios: China launching an amphibious invasion of Taiwan, Russia attacking a NATO state in Eastern Europe, or North Korea starting a crisis on the Korean Peninsula. You are free to set the scope of the crisis and fill in its details, within reason. In your scenario, you are tasked with identifying the role that nuclear weapons would play in the crisis and how you would advise the president to make sure that U.S. nuclear weapons fulfill that role.</p><ul><li>Would nuclear weapons only deter nuclear use by the adversary? Or would you use them to coerce the adversary into restraining its non-nuclear operations as well?</li><li>Would you recommend increasing the alert status of U.S. nuclear forces or deploying some nuclear weapons forward into the theater? If so, when and how?</li><li>What verbal threats would you send to the other side?</li><li>How would you assure allies and partners about both the coercive and military threats posed by the adversary and also escalatory steps chosen by U.S. authorities?</li></ul><p>After identifying what you would recommend, you must answer the following:</p><ol><li>Why would your recommended course of action succeed in deterring or compelling the adversary?</li><li>What is the risk of nuclear escalation in your course of action?</li><li>Why might your course of action fail? What would you do if it failed?</li></ol></div><div class="assign-box"><h5>Assignment 2: Nuclear Posture Review (2,500 words)</h5><p class="window">Due weeks 8–10 (turn in any time in the window)</p><p>Make recommendations to the United States’ Nuclear Posture Review Commission. You must identify the security threats that the United States faces. How would the United States’ nuclear weapons address those threats? What objectives would they fulfill?</p><p>Then make an argument for the level and types of nuclear forces needed to achieve those objectives. How many nuclear weapons does the United States need? On which type of launchers?</p><p>Assess whether the United States should adjust its targeting doctrine, nuclear proliferation policy, nuclear stockpile stewardship, nuclear posture, declaratory policy, and force acquisition and/or retirement.</p><p>Finally, assess whether and how you would pursue arms control with Russia or China and whether you think this nuclear posture would help achieve an arms control agreement.</p></div></div></details><details class="ref-panel"><summary>Expectations of behavior and effort</summary><div class="ref-body"><p>This course is Pass/Fail. That being said, we hope and expect that you engage deeply with the material and questions presented in this course. We believe that issues of nuclear deterrence and coercion are quite complex and have a renewed urgency in the current security environment. By electing to take this course, we think that you agree. As instructors, we will strive to bring rigor and professionalism to each course session, and we expect you to do the same. If everyone is invested in the material and the debate, then this should be a fun and enriching course for everyone involved.</p></div></details><details class="ref-panel"><summary>Academic integrity</summary><div class="ref-body"><p>All graded work must comply with the NWC Academic Honor Code. This includes proper citation in graded written work to avoid any form of plagiarism. Authors are expected to give full credit in their written submissions when utilizing another’s words or ideas. Moreover, authors must avoid misrepresentation. Misrepresentation is defined as reusing a single paper for more than one purpose without permission or acknowledgment, and it includes the following: (a) submitting a single paper or substantially the same paper for more than one course at the NWC without permission of the instructors; and (b) submitting a paper or substantially the same paper previously prepared for some other purpose outside the NWC without acknowledging it is an earlier work.</p><p>All unclassified, graded, written assignments will be submitted to their professors/moderators electronically through Turnitin Assignments set up in each Blackboard seminar course. Students may assess their papers through the Turnitin Student Workbooks in Blackboard to benefit from Turnitin’s Similarity Report prior to final paper submission. This will highlight areas that require additional citation. There is no percentage that means “all clear” and no percentage that means “big trouble.” Papers with as low as a 10% similarity score may have serious plagiarism concerns while a 50% similarity score could be fine (an example is a large portion of an official document attached as an appendix). Turnitin requires students to go through the markup line by line to identify and correct any problems. When submitting papers for evaluation to professors/moderators through the Blackboard seminar course, students are still able to revise and resubmit the assignment up to the assignment deadline. For this reason, faculty will refrain from downloading or otherwise viewing submissions that come in through Turnitin Assignments in their Blackboard seminar courses until the final deadline for submitting papers has passed. Students should refer any questions regarding Turnitin to their professors/moderators.</p></div></details><details class="ref-panel"><summary>Generative AI (GAI) policy</summary><div class="ref-body"><p>ChatGPT, Claude, and other LLMs or products like Grammarly are now capable of editing, rewriting, or generating content for papers. With proper documentation, it is permissible to use them in your assignments. If you use them, you must follow the following requirements. Failure to meet these requirements will be considered an academic integrity violation.</p><ol><li>You must indicate where text has been generated or altered by a GAI system with footnotes that make clear where the affected text begins and ends.</li><li>You must include an appendix (which does not count towards your word count) that shows your work by copying and pasting the relevant interaction with the model, including all of your prompts and the raw text generated.</li><li>GAI systems still hallucinate. You are responsible for independently fact checking, sourcing, and appropriately citing any claims made in generated text that are not common or general knowledge.</li></ol><p>Overall, in all uses of GAI, students must comply with NWC policy on academic integrity. The responsible and ethical use of GAI requires that students disclose and cite the nature and extent of their use of GAI for graded assignments. In other words, when in doubt, err on the side of documenting how you used a GAI system to aid you in an assignment.</p></div></details></section>
+    <h2 class="lessons-label" id="lessons">Lessons</h2>
+    <div id="lessonList"><details class="session-card" id="card-1" data-code="1"><summary><span class="code">Lesson 1</span><span class="title-wrap"><span class="title">Great Debate</span><span class="card-meta-line">2 required &middot; 10 further &middot; ~100 pp. counted</span></span><span class="badges"><span class="badge badge-type">Lesson</span></span></summary><div class="card-body"><div class="card-block-label">The great debate: How do nuclear weapons affect international politics?</div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></span>Guiding question</h4><p>Are nuclear weapons a net positive or a net negative for the world? Should we “worry”? Or should we “love the bomb”?</p></div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Required Reading (2)</h4><ul class="cite-list"><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="ef7dd3a1" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. John Lewis Gaddis, “The Long Peace: Elements of Stability in the Postwar International System,” International Security 10, no. 4 (Spring 1986): 120-140.</span><span class="cite-pages">20 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="12c7b2ca" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Scott Douglas Sagan and Kenneth N. Waltz, The Spread of Nuclear Weapons: An Enduring Debate, 3rd ed. (New York: W.W. Norton &amp; Co, 2013), chapters 1 and 2, pp. 3-82.</span><span class="cite-pages">80 pp.</span></span></li></ul></div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Further Reading (10)</h4><details class="more"><summary>Show further readings</summary><ul class="cite-list further"><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="fda880ca" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. John Mueller, “The Essential Irrelevance of Nuclear Weapons: Stability in the Postwar World,” International Security 13, no. 2 (Fall 1988): 55–79.</span><span class="cite-pages">24 pp.</span><span class="cite-note">Syllabus draft note: “replace with Gaddis 1986.”</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="d042fcf4" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Robert Jervis, The Meaning of the Nuclear Revolution: Statecraft and the Prospect of Armageddon (Ithaca, NY: Cornell University Press, 1989).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="e1665849" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Ward Wilson, “The Winning Weapon?: Rethinking Nuclear Weapons in Light of Hiroshima,” International Security 31, no. 4 (Spring 2007): 162–79.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="1e243a4a" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">4. Glenn Herald Snyder, “The balance of power and the balance of terror,” Theory and research on the causes of war (Englewood Cliffs, NJ: Prentice-Hall, 1969), 114-126.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="4c950abc" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">5. Robert Rauchhaus, “Evaluating the Nuclear Peace Hypothesis: A Quantitative Approach,” Journal of Conflict Resolution 53, no. 2 (April 2009): 258–77.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="e4905104" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">6. T. V. Paul, “Taboo or Tradition? The Non-Use of Nuclear Weapons in World Politics,” Review of International Studies 36, no. 04 (October 2010): 853–63.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="0c2c99fb" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">7. Nina Tannenwald, “Stigmatizing the Bomb: Origins of the Nuclear Taboo,” International Security 29, no. 4 (Spring 2005): 5–49.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="43fcfe53" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">8. Charles L. Glaser, Analyzing Strategic Nuclear Policy (Princeton, N.J: Princeton University Press, 1990).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="21a562cb" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">9. Scott Douglas Sagan and Kenneth N. Waltz, The Spread of Nuclear Weapons: An Enduring Debate, 3rd ed. (New York: W.W. Norton &amp; Co, 2013), chapters 3 and 4.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="788f58e9" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">10. Kenneth N. Waltz, “Nuclear Myths and Political Realities,” American Political Science Review 84, no. 3 (September 1990): 730–45.</span></span></li></ul></details></div></div></details><details class="session-card" id="card-2" data-code="2"><summary><span class="code">Lesson 2</span><span class="title-wrap"><span class="title">Terminology</span><span class="card-meta-line">4 required &middot; 7 further &middot; ~85 pp. counted</span></span><span class="badges"><span class="badge badge-type">Lesson</span></span></summary><div class="card-body"><div class="card-block-label">Terminology: The language of nuclear deterrence</div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Required Reading (4)</h4><ul class="cite-list"><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="f9574270" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Charles Glaser and Brian Radzinsky, “Basics of Deterrence and U.S. Nuclear Doctrine and Forces.” In Charles Glaser, Austin Long, and Brian Radzinsky, Managing U.S. Nuclear Operations in the 21st Century (Brookings Institution Press, 2022), pp. 15-40.</span><span class="cite-pages">25 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="d0899b02" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Bernard Brodie, The Absolute Weapon (1946), pp. 14-25, 57-63.</span><span class="cite-pages">17 pp.</span><span class="cite-note">Syllabus draft note: “but don’t need to read all 46 pages, check to see which ones we can cut.”</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="ddef869c" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Robert Jervis, The Meaning of the Nuclear Revolution: Statecraft and the Prospect of Armageddon (Ithaca, NY: Cornell University Press, 1989), pp. 1-23, 38-45.</span><span class="cite-pages">29 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="b38ffd05" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">4. Colin Gray and Keith Payne, “Under the Nuclear Gun: Victory is Possible,” Foreign Policy, No. 39 (Summer 1980), pp. 14-27.</span><span class="cite-pages">14 pp.</span></span></li></ul></div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Further Reading (7)</h4><details class="more"><summary>Show further readings</summary><ul class="cite-list further"><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="2300632a" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Colin Gray, “Nuclear Strategy: The Case for a Theory of Victory,” International Security 4, no. 1 (1979), pp. 54-87.</span><span class="cite-pages">33 pp.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="86ad9299" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Michael Mazarr, Understanding Deterrence, RAND Corporation, Expert Insights, <a href="https://www.rand.org/pubs/perspectives/PE295.html" target="_blank" rel="noopener">https://www.rand.org/pubs/perspectives/PE295.html</a></span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="de2103a5" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Tami Davis Biddle, Coercion Theory: A Basic Introduction for Practitioners, Texas National Security Review 3, no. 2 (Spring 2020): 94-109.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="4871effc" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">4. Robert Jervis, “Cooperation Under the Security Dilemma,” World Politics 30, no. 2 (January 1978), pp. 187-214.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="7f68f499" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">5. Bruce Kuklick, Blind Oracles: Intellectuals and War from Kennan to Kissinger (Princeton, N.J.: Princeton University Press, 2007): “Chapter 2: Theorists of War, 1945-1953”; “Chapter 3: RAND in Opposition, 1946-1961”; “Chapter 5: RAND and the Kennedy administration, 1961-1962.”</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="2950a0ee" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">6. Bernard Brodie, “The Development of Nuclear Strategy,” International Security 2, no. 4 (Spring 1978): 65–83.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="d81bc98d" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">7. Eric S. Edelman, “Nuclear Strategy and Practice: The Great Divergence,” in Hal Brands, ed., The New Makers of Modern Strategy: From the Ancient World to the Digital Age (Princeton: Princeton University Press, 2023), 665-691.</span><span class="cite-pages">26 pp.</span></span></li></ul></details></div></div></details><details class="session-card" id="card-3" data-code="3"><summary><span class="code">Lesson 3</span><span class="title-wrap"><span class="title">Risk &amp; Uncertainty</span><span class="card-meta-line">4 required &middot; 7 further &middot; ~101 pp. counted</span></span><span class="badges"><span class="badge badge-type">Lesson</span></span></summary><div class="card-body"><div class="card-block-label">Risk and uncertainty: How fragile is the nuclear balance?</div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Required Reading (4)</h4><ul class="cite-list"><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="7e61340b" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Albert Wohlstetter, “The Delicate Balance of Terror,” Foreign Affairs, Jan. 1959, pp. 211-234.</span><span class="cite-pages">23 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="045ba26c" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. “The Manipulation of Risk,” in Thomas Schelling, Arms and Influence (New Haven: Yale University, 1966), 92-125.</span><span class="cite-pages">33 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="76265732" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Austin Long and Brendan Green, “Stalking the Secure Second Strike: Intelligence, Counterforce, and Nuclear Strategy,” Journal of Strategic Studies 38, nos. 1-2 (2015), pp. 38-73.</span><span class="cite-pages">35 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="f8beeb33" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">4. Bruce Blair, The Logic of Accidental Nuclear War (Washington, D.C.: Brookings Institution Press, 1993), pp. 1-10.</span><span class="cite-pages">10 pp.</span></span></li></ul></div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Further Reading (7)</h4><details class="more"><summary>Show further readings</summary><ul class="cite-list further"><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="f8c12f44" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Keir A. Lieber and Daryl G. Press, “The New Era of Counterforce: Technological Change and the Future of Nuclear Deterrence,” International Security 41, no. 4 (April 1, 2017): 9–49.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="0058e997" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Keir A. Lieber and Daryl Grayson Press, The Myth of the Nuclear Revolution: Power Politics in the Atomic Age, Cornell Studies in Security Affairs (Ithaca, NY: Cornell University Press, 2020).</span><span class="cite-note">The syllabus appends “Freedman and Michaels, The Strategy of Stable Conflict” to this entry, which looks like a stray fragment.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="1fdfcfe2" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. James Acton, “Reclaiming Strategic Stability,” in Elbridge Colby and Michael Gerson, eds., Strategic Stability: Contending Interpretations (U.S. Army War College Press), pp. 117-128.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="4befb04c" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">4. John D. Steinbruner and Thomas M. Garwin, “Strategic Vulnerability: The Balance between Prudence and Paranoia,” International Security 1, no. 1 (1976): 138.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="37a9689b" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">5. Matthew Bunn and Kosta Tsipis, “The Uncertainties of a Preemptive Nuclear Attack,” Scientific American 249, no. 5 (November 1983): 38–47.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="2cdd71ec" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">6. “ICBM Vulnerability,” in Lawrence Freedman and Jeffrey H. Michaels, The Evolution of Nuclear Strategy: New, Updated and Completely Revised, 4th ed. (London: Palgrave Macmillan, 2019), 483-494.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="d3123db5" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">7. Adam Mount, “The Indelicate Balance of Nuclear Modernization,” Bulletin of the Atomic Scientists, January 28, 2016, <a href="https://thebulletin.org/2016/01/the-indelicate-balance-of-nuclear-modernization/" target="_blank" rel="noopener">https://thebulletin.org/2016/01/the-indelicate-balance-of-nuclear-modernization/</a></span></span></li></ul></details></div></div></details><details class="session-card" id="card-4" data-code="4"><summary><span class="code">Lesson 4</span><span class="title-wrap"><span class="title">Brinkmanship &amp; Berlin</span><span class="card-meta-line">3 required &middot; 8 further &middot; ~107 pp. counted</span></span><span class="badges"><span class="badge badge-type">Lesson</span></span></summary><div class="card-body"><div class="card-block-label">Brinkmanship and the Berlin Crisis</div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Required Reading (3)</h4><ul class="cite-list"><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="72d369eb" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Marc Trachtenberg, History and Strategy (Princeton, N.J: Princeton University Press, 1991), 169-234.</span><span class="cite-pages">67 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="f305e335" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Sergey Radchenko, To Run the World: The Kremlin’s Cold War Bid for Global Power (New York, NY: Cambridge University Press, 2024), 281-293.</span><span class="cite-pages">12 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="98130600" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Todd S. Sechser and Matthew Fuhrmann, Nuclear Weapons and Coercive Diplomacy (Cambridge: Cambridge University Press, 2017), 3-21, 132-142.</span><span class="cite-pages">28 pp.</span></span></li></ul></div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Further Reading (8)</h4><details class="more"><summary>Show further readings</summary><ul class="cite-list further"><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="5f47d9b3" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. “Nuclear Weapons, Statecraft, and the Berlin Crisis, 1958–1962,” Francis J. Gavin, Nuclear Statecraft: History and Strategy in America’s Atomic Age (Ithaca, N.Y: Cornell University Press, 2012), 57-74.E-book</span><span class="cite-pages">17 pp.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="94a52194" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. National Security Archive, Electronic Briefing Book #56, “First Strike Options and the Berlin Crisis, 1961,” <a href="http://nsarchive.gwu.edu/NSAEBB/NSAEBB56/" target="_blank" rel="noopener">http://nsarchive.gwu.edu/NSAEBB/NSAEBB56/</a></span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="74bd061b" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Todd S. Sechser and Matthew Fuhrmann, “Crisis Bargaining and Nuclear Blackmail,” International Organization 67, no. 1 (January 2013): 173–95.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="e8d80506" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">4. Matthew Fuhrmann and Todd S. Sechser, “Signaling Alliance Commitments: Hand-Tying and Sunk Costs in Extended Nuclear Deterrence,” American Journal of Political Science 58, no. 4 (October 2014): 919–35.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="e7f65b28" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">5. Reid B. C. Pauly, “Damned If They Do, Damned If They Don’t: The Assurance Dilemma in International Coercion,” International Security 49, no. 1 (July 1, 2024): 91–132.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="5d8d2a08" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">6. Vipin Narang, “Posturing for Peace? Pakistan’s Nuclear Postures and South Asian Stability,” International Security 34, no. 3 (Winter 2009): 38–78.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="59827c18" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">7. Campbell Craig, Destroying the Village: Eisenhower and Thermonuclear War (New York: Columbia University Press, 1998).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="cd4c3021" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">8. Robert S. Ross, “The 1995-96 Taiwan Strait Confrontation: Coercion, Credibility, and the Use of Force,” International Security 25, no. 2 (2000): 87–123.</span></span></li></ul></details></div></div></details><details class="session-card" id="card-5" data-code="5"><summary><span class="code">Lesson 5</span><span class="title-wrap"><span class="title">Cuban Missile Crisis</span><span class="card-meta-line">3 required &middot; 7 further &middot; ~110 pp. counted</span></span><span class="badges"><span class="badge badge-type">Lesson</span></span></summary><div class="card-body"><div class="card-block-label">The Cuban Missile Crisis and Crisis Management</div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></span>Guiding question</h4><p class="lead-note">The syllabus tags this lesson “– Jon” (presumably Dr. Hunt).</p></div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Required Reading (3)</h4><ul class="cite-list"><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="a307825d" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. McGeorge Bundy and James G. Blight, “October 27, 1962: Transcripts of the Meetings of the ExComm,” International Security 12, no. 3 (Winter 1987/88): 30–92.</span><span class="cite-pages">62 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="09cd505c" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Marc Trachtenberg, “The Influence of Nuclear Weapons in the Cuban Missile Crisis,” International Security 10, no. 1 (1985): 137-163.</span><span class="cite-pages">26 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="a689ed37" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. James Hershberg, “The Cuban Missile Crisis,” in Melvyn P. Leffler and Odd Arne Westad, eds., Crises and Détente, vol. 2, The Cambridge History of the Cold War (New York: Cambridge University Press, 2010), 65-87.</span><span class="cite-pages">22 pp.</span></span></li></ul></div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Further Reading (7)</h4><details class="more"><summary>Show further readings</summary><ul class="cite-list further"><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="adf48562" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Graham T. Allison, Essence of Decision: Explaining the Cuban Missile Crisis, 2nd ed. (New York: Longman, 1999).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="c5d1ebef" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Marc Trachtenberg, History and Strategy, Princeton Studies in International History and Politics (Princeton, N.J: Princeton University Press, 1991).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="1ba1e2a0" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Robert F. Kennedy, Thirteen Days: A Memoir of the Cuban Missile Crisis (New York: W. W. Norton, 1969).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="86637fcf" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">4. James G. Blight and David A. Welch, On the Brink: Americans and Soviets Reexamine the Cuban Missile Crisis, 2nd ed. (New York: Noonday, 1990).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="f517e2ee" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">5. Aleksandr Fursenko and Timothy J. Naftali, One Hell of a Gamble: Khrushchev, Castro, and Kennedy, 1958-1964, 1st ed. (New York: Norton, 1997).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="190322f7" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">6. Michael Dobbs, One Minute to Midnight: Kennedy, Khrushchev, and Castro on the Brink of Nuclear War, 1st ed. (New York: Alfred A. Knopf, 2008).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="d5e9a9a3" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">7. Sergo Mikoyan and Svetlana Savranskaya, The Soviet Cuban Missile Crisis: Castro, Mikoyan, Kennedy, Khrushchev, and the Missiles of November (Stanford, California: Stanford University Press, 2012).</span></span></li></ul></details></div></div></details><details class="session-card" id="card-6" data-code="6"><summary><span class="code">Lesson 6</span><span class="title-wrap"><span class="title">Superiority &amp; Damage Limitation</span><span class="card-meta-line">2 required &middot; 3 further &middot; ~70 pp. counted</span></span><span class="badges"><span class="badge badge-type">Lesson</span></span></summary><div class="card-body"><div class="card-block-label">Nuclear superiority and damage-limitation</div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Required Reading (2)</h4><ul class="cite-list"><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="ccfdad1a" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Charles L. Glaser and Steve Fetter, “Should the United States Reject MAD? Damage Limitation and U.S. Nuclear Strategy toward China,” International Security 41, no. 1 (2016): 49–98.</span><span class="cite-pages">49 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="95a08e1c" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Austin Long, “Damage Limitation in the 21st Century,” in Counterforce in Contemporary U.S. Nuclear Strategy, Brad Roberts, ed. (Livermore, CA: Lawrence Livermore National Laboratory, 2025), pp. 66-86.</span><span class="cite-pages">21 pp.</span></span></li></ul></div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Further Reading (3)</h4><details class="more"><summary>Show further readings</summary><ul class="cite-list further"><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="3b94054e" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Matthew Kroenig, “Nuclear Superiority and the Balance of Resolve,” International Organization 67, no. 1 (Winter 2013), pp. 141-171.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="463c872c" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. David Logan, “Nuclear Superiority is What States Make of It,” International Security, pp. 172-215.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="4ab0f5cb" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Christopher Clary, “Survivability in the Age of Counterforce,” in The Fragile Balance of Terror: Deterrence in the New Nuclear Age, Vipin Narang and Scott Sagan, eds. (Ithaca, NY: Cornell University Press, 2022): pp. 154-181.</span></span></li></ul></details></div></div></details><details class="session-card" id="card-7" data-code="7"><summary><span class="code">Lesson 7</span><span class="title-wrap"><span class="title">Arms Racing &amp; Arms Control</span><span class="card-meta-line">4 required &middot; 6 further &middot; ~62 pp. counted</span></span><span class="badges"><span class="badge badge-type">Lesson</span></span></summary><div class="card-body"><div class="card-block-label">Arms racing and arms control</div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Required Reading (4)</h4><ul class="cite-list"><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="e70d2274" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Thomas Schelling and Morton Halperin, Strategy and Arms Control (New York: Twentieth Century Fund, 1961), extracts.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="0bd421f1" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. David Holloway, “Nuclear Weapons and the Escalation of the Cold War, 1945–1962,” in The Cambridge History of the Cold War, Volume I: Origins, Melvyn P. Leffler and Odd Arne Westad, eds. (Cambridge: Cambridge University Press, 2012), 376-397.</span><span class="cite-pages">21 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="3d54013c" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. James H. Lebovic, Flawed Logics: Strategic Nuclear Arms Control from Truman to Obama (Baltimore: The Johns Hopkins University Press, 2013), chapter 6.</span><span class="cite-pages">17 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="62ec596b" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">4. John D. Maurer, “Divided Counsels: Competing Approaches to SALT, 1969–1970,” Diplomatic History 43, no. 2 (April 1, 2019): 353–77.</span><span class="cite-pages">24 pp.</span></span></li></ul></div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Further Reading (6)</h4><details class="more"><summary>Show further readings</summary><ul class="cite-list further"><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="3f2e57f4" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Thomas G. Mahnken, “Arms Competition, Arms Control, and Strategies of Peacetime Competition from Fisher to Reagan,” in Hal Brands, ed., The New Makers of Modern Strategy: From the Ancient World to the Digital Age (Princeton: Princeton University Press, 2023), 841-865.</span><span class="cite-pages">24 pp.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="1f84fc51" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Brendan Rittenhouse Green, The Revolution That Failed: Nuclear Competition, Arms Control, and the Cold War, 1st ed. (Cambridge: Cambridge University Press, 2020).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="e9b42d2e" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. John Maurer, Competitive Arms Control: Nixon, Kissinger, and SALT, 1969-1972 (New Haven: Yale University Press, 2022).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="8786266c" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">4. Jonathan Hunt, “Nuclear Arms Control in U.S. Foreign Policy,” in American History: Oxford Research Encyclopedias (New York: Oxford University Press, October 2016).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="8bcd15ae" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">5. Michael Krepon, Winning and Losing the Nuclear Peace: The Rise, Demise, and Revival of Arms Control (Stanford, California: Stanford Security Studies, an imprint of Stanford University Press, 2021).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="0fb88e42" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">6. “Assured Destruction,” in Lawrence Freedman and Jeffrey H. Michaels, The Evolution of Nuclear Strategy, 4th ed. (London: Palgrave Macmillan, 2019).</span></span></li></ul></details></div></div></details><details class="session-card" id="card-8" data-code="8"><summary><span class="code">Lesson 8</span><span class="title-wrap"><span class="title">Extended Deterrence</span><span class="card-meta-line">3 required &middot; 4 further &middot; ~76 pp. counted</span></span><span class="badges"><span class="badge badge-type">Lesson</span></span></summary><div class="card-body"><div class="card-block-label">Extended deterrence and reassurance</div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Required Reading (3)</h4><ul class="cite-list"><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="f02ed26b" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Francis Gavin, Nuclear Weapons and American Grand Strategy (Washington, D.C.: Brookings Institution Press, 2020), pp. 127-146.</span><span class="cite-pages">19 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="f0807c74" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Bruce Russett, “Extended Deterrence with Nuclear Weapons: How Necessary, How Acceptable?” The Review of Politics 50, no. 2 (Spring 1988), pp. 282-302.</span><span class="cite-pages">22 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="4988e8a2" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Do Young Lee, “Strategies of Extended Deterrence: How States Provide the Security Umbrella,” Security Studies 30, no. 5 (2021), pp. 761-796.</span><span class="cite-pages">35 pp.</span></span></li></ul></div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Further Reading (4)</h4><details class="more"><summary>Show further readings</summary><ul class="cite-list further"><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="8a89b0a0" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. David Trachtenberg, “US Extended Deterrence: How Much Strategic Force is Too Little?” Strategic Studies Quarterly 6, no. 2 (Summer 2012): pp. 62-92.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="5499eaaf" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Jeffrey W. Knopf, Security Assurances and Nuclear Nonproliferation (Palo Alto, CA: Stanford University Press, 2012).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="1810a3bd" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Alexander Lanoszka, Atomic Assurance: The Alliance Politics of Nuclear Proliferation (Ithaca, NY: Cornell University Press, 2018).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="e405f888" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">4. Matthew Fuhrmann, “On Extended Nuclear Deterrence,” Diplomacy and Statecraft, 2018, pp. 51-73.</span></span></li></ul></details></div></div></details><details class="session-card" id="card-9" data-code="9"><summary><span class="code">Lesson 9</span><span class="title-wrap"><span class="title">Proliferation &amp; Posture</span><span class="card-meta-line">3 required &middot; 10 further &middot; ~106 pp. counted</span></span><span class="badges"><span class="badge badge-type">Lesson</span></span></summary><div class="card-body"><div class="card-block-label">Nuclear proliferation, nonproliferation, and posture</div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Required Reading (3)</h4><ul class="cite-list"><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="ad4a8a6c" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Scott Sagan, “Why Do States Build Nuclear Weapons? Three Models in Search of a Bomb,” International Security 21, no. 3 (Winter 1996/97): 54–86.</span><span class="cite-pages">32 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="10de8e22" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Francis J. Gavin, “Strategies of Inhibition: U.S. Grand Strategy, the Nuclear Revolution, and Nonproliferation,” International Security 40, no. 1 (July 2015): 9–46.</span><span class="cite-pages">37 pp.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="5950d48a" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Vipin Narang, Seeking the Bomb: Strategies of Nuclear Proliferation (Princeton, New Jersey: Princeton University Press, 2022), 15-52.</span><span class="cite-pages">37 pp.</span></span></li></ul></div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Further Reading (10)</h4><details class="more"><summary>Show further readings</summary><ul class="cite-list further"><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="d428af62" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Nuno P. Monteiro and Alexandre Debs, “The Strategic Logic of Nuclear Proliferation,” International Security 39, no. 2 (October 2014): 7–51.</span><span class="cite-pages">44 pp.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="7aa0fd32" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Mark S. Bell, “Beyond Emboldenment: How Acquiring Nuclear Weapons Can Change Foreign Policy,” International Security 40, no. 1 (July 2015): 87–119.</span><span class="cite-pages">32 pp.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="39ac0d8c" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Matthew Fuhrmann, Atomic Assistance: How “Atoms for Peace” Programs Cause Nuclear Insecurity (Ithaca: Cornell University Press, 2012).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="c0a3e3ff" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">4. Eliza Gheorghe, “Proliferation and the Logic of the Nuclear Market,” International Security 43, no. 4 (April 2019): 88–127.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="e7bbe28e" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">5. Erik Gartzke and Matthew Kroenig, “Nuclear Posture, Nonproliferation Policy, and the Spread of Nuclear Weapons,” Journal of Conflict Resolution 58, no. 3 (April 2014): 395–401.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="c48711e1" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">6. Ariel E. Levite, “Never Say Never Again: Nuclear Reversal Revisited,” International Security 27, no. 3 (January 2003): 59–88.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="2b2e2034" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">7. Jacques E. C. Hymans, The Psychology of Nuclear Proliferation: Identity, Emotions, and Foreign Policy (Cambridge, UK; New York: Cambridge University Press, 2006).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="9e22be3e" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">8. Etel Solingen, Nuclear Logics: Contrasting Paths in East Asia and the Middle East (Princeton: Princeton University Press, 2007).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="f738169b" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">9. Nicholas L. Miller, Stopping the Bomb: The Sources and Effectiveness of US Nonproliferation Policy (Ithaca: Cornell University Press, 2018).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="05d69135" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">10. Rachel Elizabeth Whitlark, All Options on the Table: Leaders, Preventive War, and Nuclear Proliferation (Ithaca: Cornell University Press, 2021).</span></span></li></ul></details></div></div></details><details class="session-card" id="card-10" data-code="10"><summary><span class="code">Lesson 10</span><span class="title-wrap"><span class="title">Escalation &amp; Emerging Tech</span><span class="card-meta-line">3 required &middot; 10 further &middot; ~20 pp. counted</span></span><span class="badges"><span class="badge badge-type">Lesson</span></span></summary><div class="card-body"><div class="card-block-label">Escalation and emerging technology</div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Required Reading (3)</h4><ul class="cite-list"><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="5b82a12f" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. “America’s Strategic Posture: The Final Report of the Congressional Commission on the Strategic Posture of the United States,” Institute for Defense Analyses, Executive Summary.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="2bf174c9" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Charles Glaser, James Acton, and Steven Fetter, “The U.S. Nuclear Arsenal Can Deter Both China and Russia,” Foreign Affairs, 2023.</span></span></li><li class="cite cite-req"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="f1346f7e" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Vipin Narang and Scott Sagan, “The Dangerous Nuclear Future,” in Vipin Narang and Scott Sagan, eds., The Fragile Balance of Terror: Deterrence in the New Nuclear Age (Ithaca, NY: Cornell University Press, 2022), pp. 230-250.</span><span class="cite-pages">20 pp.</span></span></li></ul></div><div class="subsection span-all"><h4><span class="sec-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg></span>Further Reading (10)</h4><details class="more"><summary>Show further readings</summary><ul class="cite-list further"><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="abf69562" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">1. Andrew Krepinevich, “The New Nuclear Age,” Foreign Affairs (May/June 2022).</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="40834e1d" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">2. Forrest Morgan et al., Dangerous Thresholds: Managing Escalation in the 21st Century (Santa Monica, CA: RAND, 2008), pp. 7-38.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="c787f25e" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">3. Charles Glaser, James Acton, and Steven Fetter, “The U.S. Arsenal Can Deter Both China and Russia,” Foreign Affairs, October 5, 2023, <a href="https://www.foreignaffairs.com/united-states/us-nuclear-arsenal-can-deter-both-china-and-russia" target="_blank" rel="noopener">https://www.foreignaffairs.com/united-states/us-nuclear-arsenal-can-deter-both-china-and-russia</a></span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="406f7659" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">4. James Johnson, “Artificial Intelligence in Nuclear Warfare: A Perfect Storm of Instability?” The Washington Quarterly 43, no. 2 (2020): 197-211.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="d674d6db" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">5. James Acton, “Escalation through Entanglement: How the Vulnerability of Command-and-Control Systems Raises the Risks of an Inadvertent Nuclear War,” International Security 43, no. 1: 56-99.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="247a97c6" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">6. David Logan, “Are They Reading Schelling in Beijing? The Dimensions, Drivers, and Risks of Nuclear-Conventional Entanglement in China,” Journal of Strategic Studies 46, no. 1 (2023): 5-55.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="7a7a3bf5" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">7. Herman Kahn, On Escalation: Metaphors and Scenarios (New York: Praeger, 1965), Chapter 1.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="5f8d5589" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">8. Barry Posen, Inadvertent Escalation: Conventional War and Nuclear Risks (Ithaca, NY: Cornell University Press, 1991), Chapter 1.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="708b4aa0" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">9. Kristin Ven Bruusgaard, “Russia’s Nuclear Strategy and Conventional Inferiority,” Journal of Strategic Studies 44, no. 1 (2021): 3-35.</span></span></li><li class="cite cite-fur"><label class="read-toggle"><input type="checkbox" class="read-checkbox" data-read-id="645572c0" aria-label="Mark as read"></label><span class="cite-text"><span class="plain">10. Caitlin Talmadge, “Too Much of a Good Thing? Conventional Military Effectiveness and the Dangers of Nuclear Escalation,” in The Sword’s Other Edge: Tradeoffs in the Pursuit of Military Effectiveness, Dan Reiter, ed. (Cambridge, UK: Cambridge University Press, 2017), pp. 197-226.</span></span></li></ul></details></div></div></details></div>
+    <p class="no-results" id="noResults">No lessons match your search.</p>
+  </div>
+</div>
+
+<footer class="page-footer">
+  Personal study aid for the Naval War College elective <em>Nuclear Deterrence and Coercion in a Multipolar Age</em> (Winter 2026/27). Compiled from the course syllabus (<em>Nuclear Deterrence Theory Course_26-27</em>). The official syllabus and Blackboard are authoritative; check them for schedule and reading changes.
+</footer>
+
+<button type="button" class="back-to-top" id="backToTop" data-action="scroll-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" width="20" height="20"><path d="M6 15l6-6 6 6"/></svg>
+</button>
+
+<nav class="bottom-nav" aria-label="Quick navigation">
+  <button type="button" data-action="open-drawer" aria-label="Menu">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    <span>Menu</span>
+  </button>
+  <button type="button" data-action="next-unread" aria-label="Next unread reading">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>
+    <span>Reading</span>
+  </button>
+  <button type="button" data-action="focus-search" aria-label="Search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <span>Search</span>
+  </button>
+  <button type="button" data-action="theme-toggle" aria-label="Toggle dark mode">
+    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+    <span>Theme</span>
+  </button>
+</nav>
+
+<script>
+(function() {
+  'use strict';
+
+  var THEME_KEY = 'ndcTheme', READ_KEY = 'ndcReadState';
+
+  function store(k, v) { try { localStorage.setItem(k, v); } catch (e) { /* storage unavailable */ } }
+  function load(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function pad(n) { return n < 10 ? '0' + n : '' + n; }
+  function escapeHtml(s) { return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
+  function escapeRegExp(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); }
+  function debounce(fn, wait) { var t; return function() { clearTimeout(t); t = setTimeout(fn, wait); }; }
+
+  // ---------------- theme ----------------
+  function applyTheme(theme) {
+    if (theme === 'dark' || theme === 'light') document.documentElement.setAttribute('data-theme', theme);
+    else document.documentElement.removeAttribute('data-theme');
+  }
+  function toggleTheme() {
+    var current = document.documentElement.getAttribute('data-theme');
+    var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var next = !current ? (prefersDark ? 'light' : 'dark') : (current === 'dark' ? 'light' : 'dark');
+    store(THEME_KEY, next);
+    applyTheme(next);
+  }
+  applyTheme(load(THEME_KEY));
+
+  // ---------------- reading checkboxes ----------------
+  function loadReadState() { try { return JSON.parse(load(READ_KEY)) || {}; } catch (e) { return {}; } }
+  function initReadingCheckboxes() {
+    var state = loadReadState();
+    document.querySelectorAll('.read-checkbox').forEach(function(cb) {
+      var id = cb.dataset.readId, li = cb.closest('li');
+      if (state[id]) { cb.checked = true; if (li) li.classList.add('is-read'); }
+      cb.addEventListener('change', function() {
+        var s = loadReadState();
+        if (cb.checked) s[id] = true; else delete s[id];
+        store(READ_KEY, JSON.stringify(s));
+        if (li) li.classList.toggle('is-read', cb.checked);
+        updateProgress();
+      });
+    });
+    updateProgress();
+  }
+
+  // ---------------- progress
+  function updateProgress() {
+    var req = document.querySelectorAll('.cite-req .read-checkbox'), done = 0;
+    req.forEach(function(cb) { if (cb.checked) done++; });
+    var el = document.getElementById('progLine');
+    if (el) el.textContent = done + ' of ' + req.length + ' required readings marked read';
+  }
+  function nextUnread() {
+    closeDrawer();
+    var cbs = document.querySelectorAll('.cite-req .read-checkbox');
+    for (var i = 0; i < cbs.length; i++) if (!cbs[i].checked) {
+      var card = cbs[i].closest('details'); if (card) card.open = true;
+      var li = cbs[i].closest('li'); setTimeout(function() { flash(li); }, 30); return;
+    }
+  }
+
+  // ---------------- search ----------------
+  var searchIndex = [];
+  function buildSearchIndex() {
+    searchIndex = Array.prototype.map.call(document.querySelectorAll('.session-card'), function(card) {
+      return { card: card, code: card.dataset.code, text: card.textContent.toLowerCase() };
+    });
+  }
+  function clearHighlights() {
+    document.querySelectorAll('mark.search-hl').forEach(function(mark) {
+      var parent = mark.parentNode;
+      if (!parent) return;
+      while (mark.firstChild) parent.insertBefore(mark.firstChild, mark);
+      parent.removeChild(mark);
+      parent.normalize();
+    });
+  }
+  function highlightTerms(root, terms) {
+    var src = terms.map(escapeRegExp).join('|');
+    var testRe = new RegExp(src, 'i'), globalRe = new RegExp(src, 'gi');
+    var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node) {
+        var p = node.parentNode;
+        if (!p || p.nodeName === 'SCRIPT' || p.nodeName === 'STYLE') return NodeFilter.FILTER_REJECT;
+        return testRe.test(node.nodeValue) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+      }
+    });
+    var nodes = [], n;
+    while ((n = walker.nextNode())) nodes.push(n);
+    nodes.forEach(function(node) {
+      var text = node.nodeValue, frag = document.createDocumentFragment(), last = 0, m;
+      globalRe.lastIndex = 0;
+      while ((m = globalRe.exec(text))) {
+        if (m.index > last) frag.appendChild(document.createTextNode(text.slice(last, m.index)));
+        var mark = document.createElement('mark');
+        mark.className = 'search-hl';
+        mark.textContent = m[0];
+        frag.appendChild(mark);
+        last = globalRe.lastIndex;
+      }
+      if (last < text.length) frag.appendChild(document.createTextNode(text.slice(last)));
+      node.parentNode.replaceChild(frag, node);
+    });
+  }
+  function filterSessions() {
+    var q = document.getElementById('searchBox').value.trim().toLowerCase();
+    var terms = q ? q.split(/\s+/).filter(Boolean) : [];
+    var visible = {}, count = 0;
+    clearHighlights();
+    searchIndex.forEach(function(e) {
+      var match = !terms.length || terms.every(function(t) { return e.text.indexOf(t) !== -1; });
+      e.card.style.display = match ? '' : 'none';
+      if (match) {
+        count++; visible[e.code] = true;
+        if (terms.length) { e.card.open = true; e.card.querySelectorAll('details.more').forEach(function(d) { d.open = true; }); highlightTerms(e.card, terms); }
+      }
+    });
+    document.getElementById('searchClearBtn').style.display = q ? 'flex' : 'none';
+    document.getElementById('noResults').style.display = (terms.length && !count) ? 'block' : 'none';
+    var status = document.getElementById('searchStatus');
+    if (terms.length && count) { status.textContent = count + ' of ' + searchIndex.length + ' lessons match'; status.style.display = 'block'; }
+    else status.style.display = 'none';
+  }
+  function expandAll() { document.querySelectorAll('.session-card').forEach(function(c) { c.open = true; }); }
+  function collapseAll() { document.querySelectorAll('.session-card').forEach(function(c) { c.open = false; }); }
+
+  // ---------------- navigation ----------------
+  function flash(el) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    el.classList.add('flash');
+    setTimeout(function() { el.classList.remove('flash'); }, 1600);
+  }
+  function jumpToSession(code) {
+    var card = document.getElementById('card-' + code);
+    if (!card) return;
+    card.open = true;
+    setTimeout(function() { flash(card); }, 30);
+  }
+  function jumpToRef(id) {
+    var el = document.getElementById(id);
+    if (el) { if (el.tagName === 'DETAILS') el.open = true; el.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  }
+  function focusSearch() {
+    openDrawer();
+    var box = document.getElementById('searchBox');
+    setTimeout(function() { box.focus(); }, 250);
+  }
+
+  // ---------------- drawer ----------------
+  function openDrawer() {
+    document.querySelector('.sidebar').classList.add('open');
+    document.getElementById('drawerBackdrop').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDrawer() {
+    document.querySelector('.sidebar').classList.remove('open');
+    document.getElementById('drawerBackdrop').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  var ACTIONS = {
+    'next-unread': nextUnread, 'expand-all': expandAll, 'collapse-all': collapseAll,
+    'scroll-top': function() { window.scrollTo({ top: 0, behavior: 'smooth' }); },
+    'focus-search': focusSearch, 'theme-toggle': toggleTheme, 'open-drawer': openDrawer, 'close-drawer': closeDrawer
+  };
+  document.addEventListener('click', function(e) {
+    var a = e.target.closest('[data-action]');
+    if (a && ACTIONS[a.dataset.action]) { ACTIONS[a.dataset.action](); return; }
+    var s = e.target.closest('[data-jump-session]');
+    if (s) { closeDrawer(); jumpToSession(s.dataset.jumpSession); return; }
+    var r = e.target.closest('[data-jump-ref]');
+    if (r) { closeDrawer(); jumpToRef(r.dataset.jumpRef); }
+  });
+  document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeDrawer(); });
+
+  var box = document.getElementById('searchBox');
+  function clearSearchBox() { if (!box.value) return; box.value = ''; filterSessions(); box.focus(); }
+  box.addEventListener('input', debounce(filterSessions, 100));
+  box.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && this.value) { clearSearchBox(); e.stopPropagation(); }
+    else if (e.key === 'Enter') {
+      e.preventDefault();
+      var m = searchIndex.filter(function(x) { return x.card.style.display !== 'none'; })[0];
+      if (m) { closeDrawer(); m.card.open = true; m.card.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    }
+  });
+  document.getElementById('searchClearBtn').addEventListener('click', clearSearchBox);
+  window.addEventListener('scroll', function() {
+    document.getElementById('backToTop').classList.toggle('show', window.scrollY > 600);
+  });
+  window.addEventListener('resize', debounce(function() { if (window.innerWidth >= 1100) closeDrawer(); }, 200));
+
+  // ---------------- init ----------------
+  buildSearchIndex();
+  initReadingCheckboxes();
+})();
+
+</script>
+
+</body>
+</html>
